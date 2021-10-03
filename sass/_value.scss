@@ -1,0 +1,66 @@
+.value {
+    position: relative;
+    margin-top: 89px;
+    text-align: center;
+
+    &-title {
+        padding-bottom: 70px;
+        font-size: $font-xlg;
+        font-weight: 700;
+        color: $redColor;
+        text-transform: uppercase;
+    }
+
+    &-item {
+
+        span {
+            margin-top: 20px;
+            font-family: Open Sans;
+            font-size: $font-md;
+            color: $redColor;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+    }
+
+    &-icon {
+        margin-bottom: 20px;
+    }
+
+    &-box {
+        margin-top: 93px;
+        margin-bottom: 70px;
+        box-shadow: 0px 0px 23px -2px #00000040;
+        
+    }
+
+    &-content {
+        margin-top: 85px;
+        padding-left: 53px;
+
+        p {
+            padding-bottom: 30px;
+            font-size: $font-xlg;
+            color: $redColor;
+            font-weight: 700;
+            text-transform: uppercase;
+            text-align: center;
+        }
+
+        span {
+            font-family: Open Sans;
+            font-size: $font-md;
+            line-height: 25px;
+            float: left;
+            text-align: left;
+        }
+    }
+
+    &-img {
+        width: 100%;
+        
+        img {
+            width: 100%;
+        }
+    }
+}

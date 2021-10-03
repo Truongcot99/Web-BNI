@@ -1,0 +1,47 @@
+
+.nav {
+    position: sticky;
+    z-index: 1000;
+    height: $heightNav;
+    background-color: #999999;
+    top: 0;
+
+    &-list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    li {
+        position: relative;
+        cursor: pointer;
+
+        &:hover a{
+            color: $redColor;
+        }
+    }
+
+    a {
+        color: $white;
+        font-size: $font-md;
+        line-height: $heightNav;
+        text-transform: uppercase;
+    }
+}
+
+.icon-home {
+    font-size: 3rem;
+    color: $white;
+}
+
+.icon-down {
+    position: absolute;
+    font-size: $font-md;
+    top: 25%;
+    right: -18%;
+}
+
+.active {
+    color: $redColor;
+}

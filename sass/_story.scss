@@ -1,0 +1,33 @@
+.story {
+    position: relative;
+    text-align: center;
+    padding-top: 84px;
+
+    &-title {
+        font-size: $font-xlg;
+        font-weight: 700;
+        line-height: 43px;
+        color: $redColor;
+        text-transform: uppercase;
+    }
+
+    &-list {
+        padding-top: 50px;
+    }
+
+    &-item {
+        padding-bottom: 24px;
+
+        img {
+            width: 100%;
+        }
+
+        p {
+            padding-top: 9px;
+            font-family: Open Sans;
+            font-size: 1.6rem;
+            line-height: 22px;
+            color: #464444;
+        }
+    }
+}

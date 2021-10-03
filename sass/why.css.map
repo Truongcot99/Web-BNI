@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,IAAI,CAAC;EACD,QAAQ,EAAE,QAAQ;EAClB,UAAU,EAAE,qCAAqC;EACjD,iBAAiB,EAAE,SAAS;EAC5B,GAAG,EAAE,CAAC;EACN,MAAM,EAAE,IAAI;CACf",
+    "sources": [
+        "why.scss"
+    ],
+    "names": [],
+    "file": "why.css"
+}
