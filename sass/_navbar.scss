@@ -6,11 +6,46 @@
     background-color: #999999;
     top: 0;
 
+    &-bar {
+        position: relative;
+        z-index: 10;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        z-index: 10;
+        height: 50px;
+
+        @include breakpoint-up(lg) {
+            display: none;
+        }
+    }
+
+    &-btn {
+        position: absolute;
+        width: 40px;
+        height: 36px;
+        border: none;
+        background-color: #CF2030;
+
+        i {
+            font-size: 2.8rem;
+            color: $white;
+        }
+    }
+
     &-list {
         list-style: none;
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include breakpoint-down(lg) {
+            display: block;
+            background-color: #999999;
+            text-align: center;
+            transform: translateY(-100%);
+            opacity: 0;
+        }
     }
 
     li {
@@ -19,6 +54,11 @@
 
         &:hover a{
             color: $redColor;
+            text-decoration: none;
+        }
+
+        &:hover a i{
+            color: $redColor;
         }
     }
 
@@ -26,20 +66,37 @@
         color: $white;
         font-size: $font-md;
         line-height: $heightNav;
+        font-weight: 700;
         text-transform: uppercase;
+
+        @include breakpoint-down(xl) {
+            font-size: 1.4rem;
+        }
+    }
+
+    &-active {
+        @include breakpoint-down(lg) {
+            opacity: 1;
+            transform: translateY(0);
+            transform-origin: top center;
+            animation: downIn 0.2s ease-in;
+        }
     }
 }
 
 .icon-home {
     font-size: 3rem;
     color: $white;
+
+    @include breakpoint-up(lg) {
+        font-size: 2rem;
+    }
 }
 
 .icon-down {
-    position: absolute;
+    position: relative;
     font-size: $font-md;
-    top: 25%;
-    right: -18%;
+    top: -2px;
 }
 
 .active {

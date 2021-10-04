@@ -10,6 +10,11 @@
         font-weight: 700;
         color: $redColor;
         text-transform: uppercase;
+
+        @include breakpoint-down(md) {
+            font-size: $font-lg;
+            line-height: 36px;
+        }
     }
 
     &-item {
@@ -35,6 +40,11 @@
                 line-height: 22px;
                 font-weight: 600;
                 color: $redColor;
+
+                @include breakpoint-down(md) {
+                    font-size: 1.5rem;
+                    line-height: 20px;
+                }
             }
 
             span {
@@ -45,6 +55,11 @@
                 font-weight: 300;
                 line-height: 22px;
                 color: #494646;
+
+                @include breakpoint-down(md) {
+                    font-size: 1.5rem;
+                    line-height: 20px;
+                }
             }
 
             &--link {

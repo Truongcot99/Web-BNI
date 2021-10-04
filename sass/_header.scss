@@ -6,7 +6,12 @@
     align-items: center;
     height: 85px;
 
-    
+
+    &-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 
     &-left {
         display: flex;
@@ -18,6 +23,10 @@
             justify-content: center;
             list-style: none;
             margin: 0;
+
+            @include breakpoint-down(md) {
+                display: none;
+            }
         }
 
         li {
@@ -40,7 +49,7 @@
         a {
             font-size: 2.6rem;
             color: #999999;
-        
+            
             i {
             line-height: 30px;
             }
@@ -54,18 +63,19 @@
             background-color: $redColor;
             border-radius: 24px;
             color: $white;
-            font-size: 18px; 
+            font-size: 1.8rem; 
             font-weight: 400;
             line-height: 33px;
             border: none;
             outline: none;
 
+            @include breakpoint-down(md) {
+                font-size: 1.6rem;
+            }
+
             &:hover {
                 background-color: #999999;
             }
         }
-
-        
     }
-
 }

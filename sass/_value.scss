@@ -12,7 +12,7 @@
     }
 
     &-item {
-
+        margin-bottom: 8px;
         span {
             margin-top: 20px;
             font-family: Open Sans;
@@ -20,6 +20,10 @@
             color: $redColor;
             font-weight: 700;
             text-transform: uppercase;
+
+            @include breakpoint-down(lg) {
+                font-size: $font-sm;
+            }
         }
     }
 
@@ -38,6 +42,11 @@
         margin-top: 85px;
         padding-left: 53px;
 
+        @include breakpoint-down(lg) {
+            margin-top: 50px;
+            margin-bottom: 32px;
+        }
+
         p {
             padding-bottom: 30px;
             font-size: $font-xlg;
@@ -45,6 +54,12 @@
             font-weight: 700;
             text-transform: uppercase;
             text-align: center;
+            line-height: 43px;
+
+            @include breakpoint-down(lg) {
+                font-size: $font-lg;
+                line-height: 38px;
+            }
         }
 
         span {
@@ -53,11 +68,12 @@
             line-height: 25px;
             float: left;
             text-align: left;
+
         }
     }
 
     &-img {
-        width: 100%;
+        // width: 100%;
         
         img {
             width: 100%;

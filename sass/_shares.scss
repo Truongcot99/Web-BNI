@@ -11,6 +11,7 @@
         right: 0;
         bottom: 0;
         left: 0;
+        object-fit: cover;
     }
 
     &::after {
@@ -30,9 +31,16 @@
         margin: auto;
     }
     
+    &-box {
+        @include breakpoint-down(lg) {
+            margin-top: -89px;
+        }
+    }
+
     &-title {
-        padding-top: 63px;
+        padding-top: 27px;
         padding-bottom: 44px;
+        // margin-bottom: 140px;
         text-transform: uppercase;
         font-weight: 700;
         font-size: $font-xlg;
@@ -43,7 +51,7 @@
 
     .shares-icon-prev,
     .shares-icon-next {
-        z-index: 10;
+        z-index: 20;
         position: absolute;
         display: flex;
         justify-content: center;
@@ -80,33 +88,58 @@
         width: 425px;
         height: 228px;
         margin: auto;
+        transform: translateY(10%);
 
-        // &::after {
-        //     position: absolute;
-        //     content: "";
-        //     top: 0;
-        //     right: 0;
-        //     left: 0;
-        //     bottom: 0;
-        //     background-color:  #242323BF;
-        //     border-radius: 50%;
-        // }
+        @include breakpoint-down(lg) {
+            transform: translateY(36%);
+        }
+
+        @include breakpoint-down(md) {
+            position: relative;
+            left: 50%;
+            top: 200px;
+            transform: translate(-50%,-50%);
+        }
+
+        
         img {
             width: 135px !important;
             height: 135px !important;
             border-radius: 50%;
+
+            // &::after {
+            //     position: absolute;
+            //     content: "";
+            //     top: 0;
+            //     right: 0;
+            //     left: 0;
+            //     bottom: 0;
+            //     background-color:  #242323BF;
+            //     border-radius: 50%;
+            // }
         }
 
     }
 
     .shares-item {
+            padding-top: 89px;
             transform: translateY(-40%);
+
+            @include breakpoint-down(md) {
+                transform: translateY(0);
+            }
         p {
             font-family: Open sans;
             font-size: 2.6rem;
             color: $white;
             font-weight: 300;
             line-height: 41px;
+
+            @include breakpoint-down(lg) {
+                font-size: 2rem;
+                line-height: 36px;
+
+            }
         }
 
         span {
@@ -114,15 +147,24 @@
             font-size: 2.6rem;
             color: $white;
             line-height: 41px;
+
+            @include breakpoint-down(lg) {
+                font-size: 2rem;
+                line-height: 36px;
+            }
         }
 
         .item-name {
             text-transform: uppercase;
-            padding-top: 89px;
             font-size: 2.9rem;
             line-height: 46px;
             font-weight: 700;
             color: $white;
+
+            @include breakpoint-down(lg) {
+                font-size: 2.2rem;
+                line-height: 3.8rem;
+            }
         }
 
         .item-description {
@@ -134,6 +176,11 @@
             width: 80%;
             margin: auto;
             font-size: 2.2rem;
+
+            @include breakpoint-down(lg) {
+                font-size: 1.8rem;
+                line-height: 24px;
+            }
         }
     }
         .background-form {
@@ -143,7 +190,10 @@
             bottom: -147px;
             width: 100%;
             height: 205px;
-            
+            @include breakpoint-down(md) {
+                height: 180px;
+                bottom: -100px;
+            }
             img {
                 width: 100%;
                 height: 100%;
@@ -157,6 +207,10 @@
                 left: 0;
                 width: 63%;
                 background-color: #CF2030D4;
+
+                @include breakpoint-down(md) {
+                    width: 100%;
+                }
             }
 
             .form-register-arena {
@@ -166,6 +220,10 @@
                 top: 50%;
                 left: 28%;
                 transform: translate(-50%, -50%);
+
+                @include breakpoint-down(md) {
+                    left: 50%;
+                }
                 
                 p {
                     padding-bottom: 26px;
@@ -175,11 +233,16 @@
                     font-weight: 600;
                     line-height: 35px;
                     text-transform: uppercase;
+
+                    @include breakpoint-down(md) {
+                        padding-bottom: 16px;
+                        font-size: 2rem;
+                    }
                 }
 
                 .form-select {
                     padding-left: 12px;
-                    width: 299px;
+                    width: 300px;
                     height: 52px;
                     font-family: Open Sans;
                     font-size: 1.8rem;
@@ -190,6 +253,10 @@
                     border: none;
                     margin:  auto;
                     cursor: pointer;
+
+                    @include breakpoint-down(md) {
+                        width: 200px;
+                    }
                 }
             }
         }
@@ -211,4 +278,8 @@
 
 .slick-slide.slick-active{
     transform: translateY(40%);
+
+    @include breakpoint-down(md) {
+        transform: translateY(0);
+    }
 }

@@ -3,12 +3,21 @@
     text-align: center;
     padding-top: 84px;
 
+    @include breakpoint-down(md) {
+        padding: 0;
+    }
+
     &-title {
         font-size: $font-xlg;
         font-weight: 700;
         line-height: 43px;
         color: $redColor;
         text-transform: uppercase;
+
+        @include breakpoint-down(md) {
+            font-size: $font-lg;
+            line-height: 36px;
+        }
     }
 
     &-list {
@@ -28,6 +37,10 @@
             font-size: 1.6rem;
             line-height: 22px;
             color: #464444;
+
+            @include breakpoint-down(md) {
+                font-size: $font-sm;
+            }
         }
     }
 }

@@ -1,13 +1,12 @@
 .slider {
     position: relative;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
 
     &-img {
-        width: 100% !important;
-        // height: 540px;
-        // object-fit: cover;
+        width: 100%;
+
+        @include breakpoint-down(md) {
+            height: 280px;
+        }
+        
     }
 }

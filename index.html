@@ -31,6 +31,7 @@
         </script>
 
     <link rel="stylesheet" href="./sass/main.css">
+    <link rel="stylesheet" href="./js/main.js">
 
     <title>Chào mừng đến cới BNI Việt Nam</title>
 </head>
@@ -38,29 +39,26 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-6">
-                    <div class="header__logo">
-                        <img src="./image/logo-BNI.png" alt="Logo BNI">
-                    </div>
-                </div>
+        <div class="container header-wrapper">
 
-                <div class="col-lg-6 header-left">
-                    <ul class="header-left__social">
-                        <li class="header-left-social">
-                            <a href="#">
-                                <i class="fab fa-youtube"></i>
-                            </a>
-                        </li>
-                        <li class="header-social__item">
-                            <a href="#">
-                                <i class="fab fa-facebook-f"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <button class="header-left__btn">ĐĂNG KÝ THAM GIA</button>
-                </div>
+            <div class="header__logo">
+                <img src="./image/logo-BNI.png" alt="Logo BNI">
+            </div>
+
+            <div class="header-left">
+                <ul class="header-left__social">
+                    <li class="header-left-social">
+                        <a href="#">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </li>
+                    <li class="header-social__item">
+                        <a href="#">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                    </li>
+                </ul>
+                <button class="header-left__btn">ĐĂNG KÝ THAM GIA</button>
             </div>
         </div>
     </header>
@@ -68,6 +66,13 @@
     <!-- Nav bar -->
     <nav class="nav">
         <div class="container">
+
+            <div class="nav-bar">
+                <button class="nav-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
             <ul class="nav-list">
                 <li>
                     <a href="#">
@@ -106,7 +111,6 @@
                 </li>
             </ul>
         </div>
-
     </nav>
 
     <!-- Slider -->
@@ -120,10 +124,10 @@
         <div class="container">
 
             <div class="row info-content">
-                <div class="col-lg-6">
+                <div class="col-lg-6 col-md-6">
                     <img src="./image/img_welcome.png" alt="" class="info-img">
                 </div>
-                <div class="col-lg-6 info-welcome">
+                <div class="col-lg-6 col-md-6 info-welcome">
                     <p>
                         Chào mừng đến với
                         <b>BNI</b>
@@ -836,7 +840,7 @@
                     {
                         breakpoint: 800,
                         settings: {
-                            slidesToShow: 2
+                            slidesToShow: 3
                         }
                     },
                     {
@@ -847,6 +851,14 @@
                     }
                 ]
             });
+
+            // toggle nav
+            $('.nav-btn').click(function () {
+                $('.nav-list').toggleClass('nav-active')
+                $('body').toggleClass('noscroll')
+            })
+
+            console.log();
         })
 
     </script>

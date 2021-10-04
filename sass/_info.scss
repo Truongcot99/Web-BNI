@@ -2,7 +2,10 @@
     position: relative;
     width: 100%;
     margin-top: 260px;
-    // height: 1137px;
+
+    @include breakpoint-down(lg) {
+        margin-top: 150px;
+    }
 
     &::after {
         position: absolute;
@@ -19,11 +22,18 @@
         position: relative;
         transform: translateY(-120px);
         margin: auto;
+        margin-bottom: 135px;
         z-index: 10;
         width: 100%;
         height: 442px;
         background-color: $white;
         box-shadow: 0 4px 21px 1px rgba(0,0,0,0.4);
+
+        @include breakpoint-down(lg) {
+            transform: translateY(-48px);
+            height: 350px;
+            margin-bottom: 60px;
+        }
     }
 
     &-img  {
@@ -31,6 +41,17 @@
             padding: 0 20px;
             width: 100%;
             height: 565px;
+
+            @include breakpoint-down(lg) {
+                height: 450px;
+                margin-top: -18%;
+                padding-bottom: 0;
+            }
+
+            @include breakpoint-down(md) {
+                display: none;
+                margin-top: -18%;
+            }
     }
 
     &-welcome {
@@ -44,9 +65,22 @@
         font-weight: 600;
         padding-bottom: 38px;
         color: $redColor;
+
+        @include breakpoint-down(lg) {
+            padding-top: 20px;
+            padding-bottom: 28px;
+            font-size: $font-lg;
+            line-height: 32px;
+        }
+
+      
         b {
         font-size: $font-xlg;
         font-weight: bold;
+
+        @include breakpoint-down(lg) {
+            font-size: $font-lg;
+        }
         }
         }
 
@@ -54,12 +88,16 @@
             font-family: Open Sans;
             font-size: 1.6rem;
             line-height: 22px;
+
+            @include breakpoint-down(lg) {
+                font-size: $font-sm;
+                line-height: 18px;
+            }
         }
     }
 
     &-introduce {
         position: relative;
-        margin-top: 135px;
         color: $white;
         z-index: 1;
         p {
@@ -89,6 +127,10 @@
         text-align: center;
         text-transform: uppercase;
 
+        @include breakpoint-down(lg) {
+            margin-top: 16px;
+            margin-bottom: 32px;
+        }
         p {
             width: 136px;
             margin: auto;
