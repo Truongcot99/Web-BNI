@@ -797,6 +797,10 @@ a, a:visited, a:hover {
   }
 }
 
+.shares-content {
+  margin-top: 30px;
+}
+
 .shares-background {
   position: absolute;
   z-index: -1;
@@ -926,7 +930,6 @@ a, a:visited, a:hover {
   max-width: 425px;
   height: 228px;
   margin: auto;
-  margin-bottom: 90px;
 }
 
 @media (max-width: 1023px) {
@@ -955,7 +958,7 @@ a, a:visited, a:hover {
 .shares .shares-item {
   position: relative;
   bottom: 50px;
-  margin-top: 30px;
+  margin-top: 90px;
 }
 
 .shares .shares-item p {
