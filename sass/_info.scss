@@ -3,8 +3,8 @@
     width: 100%;
     margin-top: 260px;
 
-    @include breakpoint-down(lg) {
-        margin-top: 150px;
+    @include breakpoint-down(md) {
+        margin-top: 120px;
     }
 
     &::after {
@@ -22,7 +22,6 @@
         position: relative;
         transform: translateY(-120px);
         margin: auto;
-        margin-bottom: 135px;
         z-index: 10;
         width: 100%;
         height: 442px;
@@ -34,6 +33,10 @@
             height: 350px;
             margin-bottom: 60px;
         }
+
+        @include breakpoint-down(md) {
+            margin-bottom: 0;
+        } 
     }
 
     &-img  {
@@ -45,7 +48,7 @@
             @include breakpoint-down(lg) {
                 height: 450px;
                 margin-top: -18%;
-                padding-bottom: 0;
+                padding: 0;
             }
 
             @include breakpoint-down(md) {
@@ -68,18 +71,26 @@
 
         @include breakpoint-down(lg) {
             padding-top: 20px;
-            padding-bottom: 28px;
+            padding-bottom: 20px;
             font-size: $font-lg;
             line-height: 32px;
+        }
+
+        @include breakpoint-down(sm) {
+            font-size: 2rem;
+            line-height: 28px;
         }
 
       
         b {
         font-size: $font-xlg;
         font-weight: bold;
-
         @include breakpoint-down(lg) {
             font-size: $font-lg;
+        }
+
+        @include breakpoint-down(sm) {
+            font-size: 2rem;
         }
         }
         }
@@ -90,8 +101,11 @@
             line-height: 22px;
 
             @include breakpoint-down(lg) {
-                font-size: $font-sm;
                 line-height: 18px;
+            }
+
+            @include breakpoint-down(sm) {
+                font-size: 1.4rem;
             }
         }
     }

@@ -3,12 +3,20 @@
     margin-top: 89px;
     text-align: center;
 
+    @include breakpoint-down(lg) {
+        margin-top: 60px;
+    }
+
     &-title {
         padding-bottom: 70px;
         font-size: $font-xlg;
         font-weight: 700;
         color: $redColor;
         text-transform: uppercase;
+
+        @include breakpoint-down(md) {
+            font-size: $font-lg;
+        }
     }
 
     &-item {
@@ -35,7 +43,9 @@
         margin-top: 93px;
         margin-bottom: 70px;
         box-shadow: 0px 0px 23px -2px #00000040;
-        
+        @include breakpoint-down(lg) {
+            margin-top: 60px;
+        }
     }
 
     &-content {
@@ -63,17 +73,24 @@
         }
 
         span {
+            margin-left: 54px;
             font-family: Open Sans;
             font-size: $font-md;
             line-height: 25px;
             float: left;
             text-align: left;
 
+            @include breakpoint-down(lg) {
+                margin-left: 36px;
+                margin-right: 8px;
+                font-size: 1.6rem;
+            }
+
         }
     }
 
     &-img {
-        // width: 100%;
+        width: 100%;
         
         img {
             width: 100%;

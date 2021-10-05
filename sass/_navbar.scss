@@ -46,33 +46,38 @@
             transform: translateY(-100%);
             opacity: 0;
         }
-    }
+        li {
+            position: relative;
+            cursor: pointer;
 
-    li {
-        position: relative;
-        cursor: pointer;
-
-        &:hover a{
-            color: $redColor;
-            text-decoration: none;
+            &:hover .menu-children{
+                display: block;
+            }
         }
 
-        &:hover a i{
-            color: $redColor;
+        .menu--link {
+            position: relative;
+            color: $white;
+            font-size: $font-md;
+            line-height: $heightNav;
+            font-weight: 700;
+            text-transform: uppercase;
+    
+            @include breakpoint-down(xl) {
+                font-size: 1.4rem;
+            }
+
+            &:hover {
+                color: $redColor;
+                text-decoration: none;
+            }
+
+            &:hover i{
+                color: $redColor;
+            }  
         }
     }
 
-    a {
-        color: $white;
-        font-size: $font-md;
-        line-height: $heightNav;
-        font-weight: 700;
-        text-transform: uppercase;
-
-        @include breakpoint-down(xl) {
-            font-size: 1.4rem;
-        }
-    }
 
     &-active {
         @include breakpoint-down(lg) {
@@ -99,6 +104,41 @@
     top: -2px;
 }
 
-.active {
-    color: $redColor;
+.menu-children {
+    position: absolute;
+    background-color: #999999;
+    min-width: 180px;
+    transform-origin: top;
+    transition: downIn 0.3 linear;
+    display: none;
+
+    @include breakpoint-down(lg) {
+        position: relative;
+    }
+
+    ul {
+        list-style: none;
+        padding: 10px;
+
+        @include breakpoint-down(lg) {
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+    }
+
+    &--link {
+        font-family: Open sans;
+        font-size: 1.6rem;
+        line-height: 20px;
+        color: $white;
+
+        &:hover {
+            color: $redColor;
+        }
+    }
+
+
 }
