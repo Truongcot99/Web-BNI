@@ -476,12 +476,13 @@
         </div>
     </footer>
 
+    <div class="overlay"></div>
     <script>
         $(document).ready(function () {
             // toggle nav
             $('.nav-btn').click(function () {
                 $('.nav-list').toggleClass('nav-active')
-                $('body').toggleClass('noscroll')
+                $('.overlay').toggleClass('show-overlay')
             })
 
             $('.category-icon-down').click(function () {

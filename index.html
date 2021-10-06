@@ -832,6 +832,8 @@
             </div>
         </div>
     </footer>
+
+    <div class="overlay"></div>
     <script>
         $(document).ready(function () {
             // slider
@@ -882,7 +884,7 @@
             // toggle nav
             $('.nav-btn').click(function () {
                 $('.nav-list').toggleClass('nav-active')
-                $('body').toggleClass('noscroll')
+                $('.overlay').toggleClass('show-overlay')
             })
 
             // nav active 

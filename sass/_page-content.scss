@@ -70,10 +70,7 @@
         padding: 0 16px;
         font-family: Open sans;
         font-size: 2rem;
-        font-weight: 600;
-        line-height: 36px;
         font-weight: 700;
-        list-style: 36px;
         color: #2b2b2b;
     }
 
@@ -89,20 +86,14 @@
         border-radius: 12px;
 
         @include breakpoint-down(lg) {
-            padding: 12px;
+            padding: 8px;
         }
     }
-
-    option {
-        font-size: 1.6rem;
-        line-height: 20px;
-    }
-
-    
 
     label {
         display: block;
         font-size: 2rem;
+        font-family: Open sans;
         margin-bottom: 12px;
         font-weight: 600;
         line-height: 22px;
@@ -132,7 +123,7 @@
         .date-box {
             position: absolute;
             background: $redColor;
-            top: 47%;
+            top: 45%;
             left: 4%;
             padding: 4px 4px;
             text-align: center;
