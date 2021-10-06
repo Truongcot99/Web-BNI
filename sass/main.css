@@ -281,6 +281,14 @@ a, a:visited, a:hover {
   color: #CF2030;
 }
 
+.nav-list .active {
+  color: #CF2030;
+}
+
+.nav-list .active i {
+  color: #CF2030;
+}
+
 @media (max-width: 1023px) {
   .nav-active {
     opacity: 1;
@@ -1614,6 +1622,12 @@ a, a:visited, a:hover {
   font-size: 1.6rem;
   padding: 8px;
   border-radius: 12px;
+}
+
+@media (max-width: 1023px) {
+  .page-content .form-select {
+    padding: 12px;
+  }
 }
 
 .page-content option {

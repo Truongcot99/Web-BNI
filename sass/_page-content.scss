@@ -87,6 +87,10 @@
         font-size: 1.6rem;
         padding: 8px;
         border-radius: 12px;
+
+        @include breakpoint-down(lg) {
+            padding: 12px;
+        }
     }
 
     option {
