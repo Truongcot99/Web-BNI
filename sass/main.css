@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Lato';
+  font-display: swap;
+  src: url("../font/Lato-Regular_2.woff2") format("truetype");
+}
+
 body {
   -webkit-box-flex: 1;
       -ms-flex: 1;
@@ -7,7 +13,7 @@ body {
   font-size: 62.5%;
   line-height: 22px;
   font-weight: 400;
-  font-family: 'Lato', Open sans;
+  font-family: 'Lato', sans-serif;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   overflow-x: hidden;
@@ -91,7 +97,6 @@ option {
 
 * {
   font-size: 62.5%;
-  font-family: 'Lato', Open sans;
 }
 
 .header {
@@ -188,7 +193,6 @@ option {
   border-radius: 24px;
   color: #fff;
   font-size: 1.8rem;
-  font-weight: 400;
   line-height: 33px;
   border: none;
   outline: none;
@@ -210,7 +214,13 @@ option {
   z-index: 1000;
   background-color: #999999;
   top: 0;
-  padding: 14px 0;
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .nav-bar {
@@ -239,9 +249,6 @@ option {
   border: none;
   background-color: #CF2030;
   padding: 8px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   outline: none;
 }
 
@@ -296,13 +303,12 @@ option {
 }
 
 .nav-list .menu--link {
-  font-family: Open sans;
-  position: relative;
-  color: #fff;
-  font-size: 1.8rem;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
   line-height: 22px;
-  font-weight: 600;
   text-transform: uppercase;
+  color: #fff;
 }
 
 @media (max-width: 1199px) {
@@ -335,11 +341,12 @@ option {
 }
 
 .icon-home {
-  font-size: 3rem;
+  margin-bottom: 16px;
+  font-size: 2.6rem;
   color: #fff;
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1023px) {
   .icon-home {
     font-size: 2rem;
   }
@@ -482,7 +489,7 @@ option {
   font-size: 3.6rem;
   line-height: 42px;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 500;
   padding-bottom: 38px;
   color: #CF2030;
 }
@@ -769,7 +776,7 @@ option {
   padding-top: 58px;
   text-align: center;
   font-size: 3.6rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 43px;
   color: #fff;
   text-transform: uppercase;
@@ -788,6 +795,7 @@ option {
 
 .why-item {
   cursor: pointer;
+  min-height: 477px;
 }
 
 @media (max-width: 1023px) {
@@ -801,7 +809,7 @@ option {
 }
 
 .why-content {
-  padding: 27px 20px 0 20px;
+  padding: 20px 20px 0 20px;
   height: 251px;
   background-color: #fff;
   -webkit-box-shadow: 0px 0px 23px -2px #00000040;
@@ -821,8 +829,8 @@ option {
 
 .why-content span {
   font-family: Open Sans;
-  font-size: 1.6rem;
-  line-height: 22px;
+  font-size: 1.5rem;
+  line-height: 20px;
 }
 
 .shares {
@@ -909,17 +917,11 @@ option {
   margin-top: 27px;
   margin-bottom: 44px;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 3.6rem;
   line-height: 43px;
   text-align: center;
   color: #CF2030;
-}
-
-@media (max-width: 767px) {
-  .shares-title {
-    margin-bottom: 0;
-  }
 }
 
 .shares .shares-icon-prev,
@@ -955,6 +957,7 @@ option {
     width: 36px;
     height: 36px;
     font-size: 2.2rem;
+    top: 100px;
   }
 }
 
@@ -980,6 +983,10 @@ option {
   max-width: 425px;
   height: 228px;
   margin: auto;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 @media (max-width: 1023px) {
@@ -1003,12 +1010,19 @@ option {
   width: 135px !important;
   height: 135px !important;
   border-radius: 50%;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
 }
 
 .shares .shares-item {
   position: relative;
-  bottom: 50px;
-  margin-top: 90px;
+  margin-top: -20px;
+}
+
+@media (max-width: 767px) {
+  .shares .shares-item {
+    margin-top: -80px;
+  }
 }
 
 .shares .shares-item p {
@@ -1021,8 +1035,8 @@ option {
 
 @media (max-width: 1023px) {
   .shares .shares-item p {
-    font-size: 2rem;
-    line-height: 36px;
+    font-size: 1.8rem;
+    line-height: 24px;
   }
 }
 
@@ -1035,12 +1049,13 @@ option {
 
 @media (max-width: 1023px) {
   .shares .shares-item span {
-    font-size: 2rem;
-    line-height: 36px;
+    font-size: 1.8rem;
+    line-height: 24px;
   }
 }
 
 .shares .shares-item .item-name {
+  font-family: Open sans;
   text-transform: uppercase;
   font-size: 2.9rem;
   line-height: 46px;
@@ -1050,12 +1065,13 @@ option {
 
 @media (max-width: 1023px) {
   .shares .shares-item .item-name {
-    font-size: 2.2rem;
-    line-height: 3.8rem;
+    font-size: 2rem;
+    line-height: 3.6rem;
   }
 }
 
 .shares .shares-item .item-description {
+  position: relative;
   font-family: Open sans;
   color: #fff;
   font-weight: 300;
@@ -1063,17 +1079,19 @@ option {
   line-height: 30px;
   width: 80%;
   margin: auto;
+  margin-top: 20px;
   font-size: 2.2rem;
 }
 
 @media (max-width: 1023px) {
   .shares .shares-item .item-description {
-    font-size: 1.8rem;
-    line-height: 24px;
+    font-size: 1.6rem;
+    line-height: 22px;
   }
 }
 
 .shares .shares-item .item-description .icon-quotes {
+  position: absolute;
   font-size: 2.4rem;
 }
 
@@ -1177,15 +1195,15 @@ option {
 .shares .slick-slide.slick-current.slick-active.slick-center img {
   -webkit-transform: translate(-37px, -50px);
           transform: translate(-37px, -50px);
-  width: 225px !important;
-  height: 225px !important;
+  -webkit-transform: scale(1.67);
+          transform: scale(1.67);
   margin-top: 0 !important;
 }
 
 @media (max-width: 767px) {
   .shares .slick-slide.slick-current.slick-active.slick-center img {
-    width: 135px !important;
-    height: 135px !important;
+    -webkit-transform: scale(1);
+            transform: scale(1);
     -webkit-transform: translate(0, -50px);
             transform: translate(0, -50px);
   }
@@ -1194,6 +1212,13 @@ option {
 .shares .slick-slide.slick-active {
   -webkit-transform: translateY(50px);
           transform: translateY(50px);
+}
+
+.shares .slick-track {
+  top: 34px;
+  height: 300px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
 
 .story {
@@ -1210,7 +1235,7 @@ option {
 
 .story-title {
   font-size: 3.6rem;
-  font-weight: 700;
+  font-weight: 500;
   line-height: 43px;
   color: #CF2030;
   text-transform: uppercase;
@@ -1260,7 +1285,7 @@ option {
   padding-bottom: 42px;
   font-size: 3.6rem;
   line-height: 43px;
-  font-weight: 700;
+  font-weight: 500;
   color: #CF2030;
   text-transform: uppercase;
 }

@@ -65,15 +65,12 @@
         margin-top: 27px;
         margin-bottom: 44px;
         text-transform: uppercase;
-        font-weight: 700;
+        font-weight: 500;
         font-size: $font-xlg;
         line-height: 43px;
         text-align: center;
         color: $redColor;
 
-        @include breakpoint-down(md) {
-            margin-bottom: 0;
-        }
     }
 
     .shares-icon-prev,
@@ -100,6 +97,7 @@
             width: 36px;
             height: 36px;
             font-size: 2.2rem;
+            top: 100px;
         }
     }
 
@@ -120,6 +118,8 @@
         max-width: 425px;
         height: 228px;
         margin: auto;
+        transform-origin: center center;
+        transition: all 0.2s linear;
 
         // &::after {
         //     position: absolute;
@@ -148,16 +148,16 @@
             width: 135px !important;
             height: 135px !important;
             border-radius: 50%;
+            transition: all 0.15s linear;
         }
     }
 
     .shares-item {
             position: relative;
-            bottom: 50px;
-            margin-top: 90px;
+            margin-top: -20px;
 
-            @include breakpoint-down(lg) {
-
+            @include breakpoint-down(md) {
+                margin-top: -80px;
             }
          p {
             font-family: Open sans;
@@ -167,8 +167,8 @@
             line-height: 41px;
 
             @include breakpoint-down(lg) {
-                font-size: 2rem;
-                line-height: 36px;
+                font-size: 1.8rem;
+                line-height: 24px;
             }
         }
 
@@ -179,12 +179,13 @@
             line-height: 41px;
 
             @include breakpoint-down(lg) {
-                font-size: 2rem;
-                line-height: 36px;
+                font-size: 1.8rem;
+                line-height: 24px;
             }
         }
 
         .item-name {
+            font-family: Open sans;
             text-transform: uppercase;
             font-size: 2.9rem;
             line-height: 46px;
@@ -192,12 +193,13 @@
             color: $white;
 
             @include breakpoint-down(lg) {
-                font-size: 2.2rem;
-                line-height: 3.8rem;
+                font-size: 2rem;
+                line-height: 3.6rem;
             }
         }
 
         .item-description {
+            position: relative;
             font-family: Open sans;
             color: $white;
             font-weight: 300;
@@ -205,14 +207,16 @@
             line-height: 30px;
             width: 80%;
             margin: auto;
+            margin-top: 20px;
             font-size: 2.2rem;
 
             @include breakpoint-down(lg) {
-                font-size: 1.8rem;
-                line-height: 24px;
+                font-size: 1.6rem;
+                line-height: 22px;
             }
 
             .icon-quotes {
+                position: absolute;
                 font-size: 2.4rem;
             }
         }
@@ -301,19 +305,22 @@
         
         .slick-slide.slick-current.slick-active.slick-center img {
             transform: translate(-37px, -50px);
-            width: 225px !important;
-            height: 225px !important;
+            transform: scale(1.67);
             margin-top: 0 !important;
 
             @include breakpoint-down(md) {
-                width: 135px !important;
-                height: 135px !important;
+                transform: scale(1);
                 transform: translate(0, -50px);
-
             }
         }
 
         .slick-slide.slick-active {
             transform: translateY(50px)
+        }
+
+        .slick-track {
+            top: 34px;
+            height: 300px;
+            transition: all 0.2s ease-in-out;
         }
 }

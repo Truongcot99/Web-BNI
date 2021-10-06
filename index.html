@@ -14,11 +14,9 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <!-- Link font Family -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet"> -->
 
     <!-- Link library slick -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
@@ -77,7 +75,7 @@
 
             <ul class="nav-list">
                 <li>
-                    <a href="./index.html" class="menu--link active">
+                    <a href="./index.html" class="menu--link">
                         <i class="fas fa-home icon-home"></i>
                     </a>
                 </li>
@@ -850,9 +848,20 @@
                 slidesToScroll: 1,
                 arrows: true,
                 fade: false,
+                infinite: false,
                 asNavFor: '.shares-img',
                 prevArrow: '<button class="shares-icon-prev"><i class="fas fa-arrow-left"></i></button>',
                 nextArrow: '<button class="shares-icon-next"><i class="fas fa-arrow-right"></i></button>',
+
+                // responsive: [
+                //     {
+                //         breakpoint: 768,
+                //         settings: {
+                //             infinite: true,
+                //         }
+
+                //     }
+                // ]
             });
 
             $(".shares-img").slick({
@@ -875,7 +884,7 @@
                     {
                         breakpoint: 768,
                         settings: {
-                            slidesToShow: 1
+                            slidesToShow: 1,
                         }
                     }
                 ]
@@ -887,8 +896,6 @@
                 $('.overlay').toggleClass('show-overlay')
                 $('body').toggleClass('noscroll')
             })
-
-            // nav active 
         })
 
     </script>
