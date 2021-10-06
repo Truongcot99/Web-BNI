@@ -1,0 +1,63 @@
+.box-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: $redColor;
+    h1 {
+        position: relative;
+        font-size: $font-xlg;
+        font-weight: 700;
+        line-height: 43px;
+        color: $white;
+        text-transform: uppercase;
+
+        &::after {
+            content: "";
+            width: 100px;
+            left: 0;
+            bottom: -5px;
+            position: absolute;
+            height: 4px;
+            background-color: #fff;
+        }
+    }
+
+    .box-path {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        position: relative;
+        margin-top: 20px;
+
+        .path-item { 
+            margin-left: 12px;
+            font-family: Open sans;
+            i {
+                font-size: 2.2rem;
+                color: $white;
+                line-height: 36px;
+                margin-right: 4px;
+            }
+            a {
+                font-size: 2.2rem;
+                line-height: 36px;
+                color: $white;
+            }
+
+            span {
+                font-size: 2rem;
+                line-height: 36px;
+                color: #b5b2b2;
+                margin-left: 18px;
+            }
+
+            &:not(:first-child)::before {
+                content: "/";
+                position: absolute;
+                font-size: 2rem;
+                line-height: 36px;
+                color: $white;
+                margin-right: 8px;
+            }
+        }
+    }
+}

@@ -39,6 +39,7 @@
     }
 
     &-item {
+        cursor: pointer;
         &:not(:last-child) {
             @include breakpoint-down(lg) {
                 margin-bottom: 36px;
