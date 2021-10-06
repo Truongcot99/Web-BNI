@@ -214,7 +214,7 @@ option {
   z-index: 1000;
   background-color: #999999;
   top: 0;
-  height: 50px;
+  padding: 14px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -246,14 +246,15 @@ option {
 }
 
 .nav-btn {
+  position: relative;
   border: none;
   background-color: #CF2030;
-  padding: 8px;
+  padding: 4px 12px;
   outline: none;
 }
 
 .nav-btn i {
-  font-size: 2.2rem;
+  font-size: 2.4rem;
   color: #fff;
 }
 
@@ -271,6 +272,7 @@ option {
   overflow: hidden;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
+  height: 22px;
 }
 
 @media (max-width: 1023px) {
@@ -1019,6 +1021,12 @@ option {
   margin-top: -20px;
 }
 
+@media (max-width: 1023px) {
+  .shares .shares-item {
+    margin-top: 8px;
+  }
+}
+
 @media (max-width: 767px) {
   .shares .shares-item {
     margin-top: -80px;
@@ -1063,7 +1071,7 @@ option {
   color: #fff;
 }
 
-@media (max-width: 1023px) {
+@media (max-width: 767px) {
   .shares .shares-item .item-name {
     font-size: 2rem;
     line-height: 3.6rem;
