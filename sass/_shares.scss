@@ -1,17 +1,33 @@
 .shares {
     position: relative;
     text-align: center;
+    margin-top: 136px;
     margin-bottom: 147px;
 
+    @include breakpoint-down(lg) {
+        margin-top: 120px;
+    }
+
+    &-content {
+        margin-top: 30px;
+    }
     &-background {
         position: absolute;
         z-index: -1;
         width: 100%;
-        height: 70%;
+        height: 76%;
         right: 0;
         bottom: 0;
         left: 0;
         object-fit: cover;
+
+        @include breakpoint-down(lg) {
+            height: 74%;
+        }
+
+        @include breakpoint-down(md) {
+            height: 77%;
+        }
     }
 
     &::after {
@@ -19,11 +35,18 @@
         z-index: -1;
         width: 100%;
         content: "";
-        height: 70%;
+        height: 76%;
         right: 0;
         bottom: 0;
         left: 0;
         background-color:  #242323BF;
+
+        @include breakpoint-down(lg) {
+            height: 74%;
+        }
+        @include breakpoint-down(md) {
+            height: 77%;
+        }
     }  
 
     &-wrapper {
@@ -32,21 +55,25 @@
     }
     
     &-box {
+        position: relative;
         @include breakpoint-down(lg) {
             margin-top: -89px;
         }
     }
 
     &-title {
-        padding-top: 27px;
-        padding-bottom: 44px;
-        // margin-bottom: 140px;
+        margin-top: 27px;
+        margin-bottom: 44px;
         text-transform: uppercase;
         font-weight: 700;
         font-size: $font-xlg;
         line-height: 43px;
         text-align: center;
         color: $redColor;
+
+        @include breakpoint-down(md) {
+            margin-bottom: 0;
+        }
     }
 
     .shares-icon-prev,
@@ -84,11 +111,20 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 100%;
-        width: 425px;
+        max-width: 425px;
         height: 228px;
         margin: auto;
-        transform: translateY(10%);
+
+        // &::after {
+        //     position: absolute;
+        //     content: "";
+        //     top: 0;
+        //     right: 0;
+        //     left: 0;
+        //     bottom: 0;
+        //     background-color:  #242323BF;
+        //     border-radius: 50%;
+        // }
 
         @include breakpoint-down(lg) {
             transform: translateY(36%);
@@ -106,29 +142,18 @@
             width: 135px !important;
             height: 135px !important;
             border-radius: 50%;
-
-            // &::after {
-            //     position: absolute;
-            //     content: "";
-            //     top: 0;
-            //     right: 0;
-            //     left: 0;
-            //     bottom: 0;
-            //     background-color:  #242323BF;
-            //     border-radius: 50%;
-            // }
         }
-
     }
 
     .shares-item {
-            padding-top: 89px;
-            transform: translateY(-40%);
+            position: relative;
+            bottom: 50px;
+            margin-top: 90px;
 
-            @include breakpoint-down(md) {
-                transform: translateY(0);
+            @include breakpoint-down(lg) {
+
             }
-        p {
+         p {
             font-family: Open sans;
             font-size: 2.6rem;
             color: $white;
@@ -138,7 +163,6 @@
             @include breakpoint-down(lg) {
                 font-size: 2rem;
                 line-height: 36px;
-
             }
         }
 
@@ -181,6 +205,10 @@
                 font-size: 1.8rem;
                 line-height: 24px;
             }
+
+            .icon-quotes {
+                font-size: 2.4rem;
+            }
         }
     }
         .background-form {
@@ -191,8 +219,8 @@
             width: 100%;
             height: 205px;
             @include breakpoint-down(md) {
-                height: 180px;
-                bottom: -100px;
+            height: 180px;
+            bottom: -100px;
             }
             img {
                 width: 100%;
@@ -214,7 +242,6 @@
             }
 
             .form-register-arena {
-                position: absolute;
                 position: absolute;
                 z-index: 2;
                 top: 50%;
@@ -245,7 +272,7 @@
                     width: 300px;
                     height: 52px;
                     font-family: Open Sans;
-                    font-size: 1.8rem;
+                    font-size: 2rem;
                     line-height: 25px;
                     color: #494646;
                     background-color: $white;
@@ -260,26 +287,27 @@
                 }
             }
         }
-}
+        // Css slick
+        .slick-slide.slick-current.slick-active.slick-center {
+            position: relative;
+            z-index: 10;
+        }
+        
+        .slick-slide.slick-current.slick-active.slick-center img {
+            transform: translate(-37px, -50px);
+            width: 225px !important;
+            height: 225px !important;
+            margin-top: 0 !important;
 
-// Css slick
-.slick-current + .slick-active img{
-    left: -28%;
-    width: 228px !important; 
-    height: 228px !important;
-    transition: 0.2s;
-    position: relative;
-    z-index: 2;
-} 
+            @include breakpoint-down(md) {
+                width: 135px !important;
+                height: 135px !important;
+                transform: translate(0, -50px);
 
-.slick-current + .slick-active{
-    transform: none !important;
-} 
+            }
+        }
 
-.slick-slide.slick-active{
-    transform: translateY(40%);
-
-    @include breakpoint-down(md) {
-        transform: translateY(0);
-    }
+        .slick-slide.slick-active {
+            transform: translateY(50px)
+        }
 }

@@ -3,10 +3,6 @@
 
     &-img {
         width: 100%;
-
-        @include breakpoint-down(md) {
-            height: 280px;
-        }
-        
+        object-fit: cover;
     }
 }

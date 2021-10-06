@@ -1,11 +1,12 @@
 .header {
+    position: relative;
+    z-index: 99;
     border-top: solid 6px $redColor;
     display: flex;
-    z-index: 10;
     justify-content: space-between;
     align-items: center;
     height: 85px;
-
+    background-color: $white;
 
     &-wrapper {
         display: flex;
