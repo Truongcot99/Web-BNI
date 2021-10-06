@@ -77,6 +77,10 @@
         color: #2b2b2b;
     }
 
+    .active a{
+        color: $redColor;
+    }
+
     .form-select {
         width: 100%;
         font-family: Open sans;
@@ -180,6 +184,11 @@
         left: 50%;
         transform: translateX(-50%);
         text-align: center;
+        margin-bottom: 16px;
+
+        @include breakpoint-down(lg) {
+            margin-bottom: 48px;
+        }
 
         ul {
             display: flex;

@@ -1604,6 +1604,10 @@ a, a:visited, a:hover {
   color: #2b2b2b;
 }
 
+.page-content .active a {
+  color: #CF2030;
+}
+
 .page-content .form-select {
   width: 100%;
   font-family: Open sans;
@@ -1716,6 +1720,13 @@ a, a:visited, a:hover {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   text-align: center;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1023px) {
+  .page-content .panigation {
+    margin-bottom: 48px;
+  }
 }
 
 .page-content .panigation ul {
