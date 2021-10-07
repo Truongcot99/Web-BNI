@@ -213,7 +213,7 @@ option {
   position: sticky;
   z-index: 1000;
   background-color: #999999;
-  top: 0;
+  top: -1px;
   padding: 14px 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -221,6 +221,13 @@ option {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media (min-width: 1024px) {
+  .nav {
+    height: 50px;
+    padding: 0;
+  }
 }
 
 .nav-bar {
@@ -272,7 +279,6 @@ option {
   overflow: hidden;
   -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
-  height: 22px;
 }
 
 @media (max-width: 1023px) {
@@ -285,19 +291,8 @@ option {
 }
 
 .nav-list li {
+  padding: 8px 0;
   cursor: pointer;
-}
-
-@media (max-width: 1023px) {
-  .nav-list li:first-child {
-    margin-top: 8px;
-  }
-}
-
-@media (max-width: 1023px) {
-  .nav-list li {
-    padding: 8px 0;
-  }
 }
 
 .nav-list li:hover .menu-children {
@@ -308,9 +303,9 @@ option {
   font-size: 18px;
   font-style: normal;
   font-weight: 500;
-  line-height: 22px;
   text-transform: uppercase;
   color: #fff;
+  line-height: 22px;
 }
 
 @media (max-width: 1199px) {
@@ -343,14 +338,15 @@ option {
 }
 
 .icon-home {
-  margin-bottom: 16px;
   font-size: 2.6rem;
+  padding-bottom: 12px;
   color: #fff;
 }
 
 @media (max-width: 1023px) {
   .icon-home {
-    font-size: 2rem;
+    padding-top: 20px;
+    font-size: 2.2rem;
   }
 }
 
@@ -358,6 +354,12 @@ option {
   position: relative;
   font-size: 1.8rem;
   top: -3px;
+}
+
+@media (max-width: 1023px) {
+  .icon-down {
+    left: 20px;
+  }
 }
 
 .menu-children {
@@ -386,8 +388,10 @@ option {
   }
 }
 
-.menu-children ul li {
-  margin-bottom: 8px;
+@media (max-width: 1023px) {
+  .menu-children ul li {
+    padding: 4px 0;
+  }
 }
 
 .menu-children--link {
@@ -415,6 +419,12 @@ option {
   position: relative;
   width: 100%;
   margin-top: 260px;
+}
+
+@media (max-width: 1023px) {
+  .info {
+    margin-top: 160px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -499,7 +509,7 @@ option {
 @media (max-width: 1023px) {
   .info-welcome p {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 12px;
     font-size: 2.4rem;
     line-height: 32px;
   }
@@ -537,7 +547,7 @@ option {
 
 @media (max-width: 1023px) {
   .info-welcome span {
-    line-height: 18px;
+    line-height: 15px;
   }
 }
 
@@ -795,6 +805,12 @@ option {
   bottom: -64px;
 }
 
+@media (max-width: 767px) {
+  .why-list {
+    bottom: -40px;
+  }
+}
+
 .why-item {
   cursor: pointer;
   min-height: 477px;
@@ -959,7 +975,7 @@ option {
     width: 36px;
     height: 36px;
     font-size: 2.2rem;
-    top: 100px;
+    top: 92px;
   }
 }
 
@@ -1101,6 +1117,14 @@ option {
 .shares .shares-item .item-description .icon-quotes {
   position: absolute;
   font-size: 2.4rem;
+  left: -18px;
+  top: -8px;
+}
+
+@media (max-width: 1023px) {
+  .shares .shares-item .item-description .icon-quotes {
+    font-size: 1.8rem;
+  }
 }
 
 .shares .background-form {
@@ -1308,6 +1332,13 @@ option {
 .news-item {
   cursor: pointer;
   margin-bottom: 44px;
+  -webkit-transition: all 0.15s linear;
+  transition: all 0.15s linear;
+}
+
+.news-item:hover {
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
 }
 
 .news-item .item-img {
@@ -1473,7 +1504,7 @@ option {
 .footer-menu li ::before {
   position: absolute;
   content: "";
-  top: 36%;
+  top: 24%;
   left: -3%;
   border-width: 4px 4px;
   border-style: solid;

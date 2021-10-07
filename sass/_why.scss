@@ -36,6 +36,10 @@
     &-list {
         position: relative;
         bottom: -64px;
+
+        @include breakpoint-down(md) {
+            bottom: -40px;
+        }
     }
 
     &-item {

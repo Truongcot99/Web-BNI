@@ -3,6 +3,10 @@
     width: 100%;
     margin-top: 260px;
 
+    @include breakpoint-down(lg) {
+        margin-top: 160px;
+    }
+
     @include breakpoint-down(md) {
         margin-top: 120px;
     }
@@ -71,7 +75,7 @@
 
         @include breakpoint-down(lg) {
             padding-top: 20px;
-            padding-bottom: 20px;
+            padding-bottom: 12px;
             font-size: $font-lg;
             line-height: 32px;
         }
@@ -101,7 +105,7 @@
             line-height: 22px;
 
             @include breakpoint-down(lg) {
-                line-height: 18px;
+                line-height: 15px;
             }
 
             @include breakpoint-down(sm) {

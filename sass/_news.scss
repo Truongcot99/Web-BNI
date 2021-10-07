@@ -20,6 +20,11 @@
     &-item {
         cursor: pointer;
         margin-bottom: 44px;
+        transition: all 0.15s linear;
+
+        &:hover {
+            transform: translateY(-6px);
+        }
 
         .item-img {
             width: 100%;
