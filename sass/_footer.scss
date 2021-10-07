@@ -30,6 +30,19 @@
         font-size: 1.8rem;
         color: $white;
         line-height: 25px;
+
+        a {
+            font-family: Open Sans;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 1.8rem;
+            color: $white;
+            line-height: 25px;
+
+            &:hover {
+                color: #999;
+            }
+        }
     }
 
     &-social {
@@ -40,6 +53,7 @@
             text-align: center;
 
             li {
+                cursor: pointer;
                 text-align: center;
                 margin-left: 16px;
                 width: 28px;
@@ -47,6 +61,15 @@
                 border: 1px solid $white;
                 border-radius: 50%
             }
+
+            li:hover {
+                background-color: $white;
+            }
+
+            :hover a i{
+                color: $redColor;
+            }
+
             :first-child {
                 margin-left: 0;
             }
@@ -70,6 +93,7 @@
                 margin-top: 5px;
 
                 a {
+                    position: relative;
                     text-decoration: none;
                     font-family: Open Sans;
                     font-style: normal;
@@ -78,9 +102,9 @@
                     line-height: 25px;
                     color: $white;
 
-                    // &:hover {
-                    //     text-decoration: ;
-                    // }
+                    &:hover {
+                        color: #999;
+                    }
                 }
             }
         }
@@ -115,6 +139,10 @@
                 font-size: 18px;
                 line-height: 25px;
                 color: $white;
+
+                &:hover {
+                    color: #999;
+                }
             }
         }
     }

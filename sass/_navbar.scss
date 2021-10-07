@@ -31,10 +31,12 @@
         position: relative;
         border: none;
         background-color: #CF2030;
-        padding: 4px 12px;
+        padding: 0 12px;
         outline: none;
+        border-radius: 4px;
 
         i {
+            padding-top: 8px;
             font-size: 2.4rem;
             color: $white;
         }
@@ -52,15 +54,34 @@
             height: 0;
             display: block;
             background-color: #999999;
-            text-align: center;
+            text-align: left;
         }
         li {
             padding: 8px 0;
             cursor: pointer;
 
+            .icon-down {
+                position: relative;
+                font-size: $font-md;
+                top: -3px;
+                color: $white;
+            
+                @include breakpoint-down(lg) {
+                    left: 20px;
+                }
+            }
             &:hover .menu-children{
                 display: block;
             }
+
+            &:hover .menu--link{
+                color: $redColor;
+                text-decoration: none;
+            }
+
+            &:hover .icon-down {
+                color: $redColor;
+            } 
         }
 
         .menu--link {
@@ -73,16 +94,7 @@
     
             @include breakpoint-down(xl) {
                 font-size: 1.6rem;
-            }
-
-            &:hover {
-                color: $redColor;
-                text-decoration: none;
-            }
-
-            &:hover i{
-                color: $redColor;
-            }  
+            } 
         }
 
         .active {
@@ -95,7 +107,8 @@
     }
     &-active {
         @include breakpoint-down(lg) {
-            height: auto;
+            text-align: left;
+            height: 100vh;
         }
     }
 }
@@ -111,16 +124,6 @@
     }
 }
 
-.icon-down {
-    position: relative;
-    font-size: $font-md;
-    top: -3px;
-
-    @include breakpoint-down(lg) {
-        left: 20px;
-    }
-}
-
 .menu-children {
     position: absolute;
     background-color: #999999;
@@ -130,6 +133,7 @@
 
     @include breakpoint-down(lg) {
         position: relative;
+        // display: block;
     }
 
     ul {
@@ -140,9 +144,11 @@
             padding: 0;
         }
 
-        li {
+        li {    
+            padding: 4px 0 8px 16px;
+
             @include breakpoint-down(lg) {
-                padding: 4px 0;
+                padding: 2px 0 2px 16px;
             }
         }
     }
@@ -152,6 +158,10 @@
         font-size: 1.6rem;
         line-height: 20px;
         color: $white;
+
+        @include breakpoint-down(lg) {
+            font-size: 1.7rem;
+        }
 
         &:hover {
             color: $redColor;

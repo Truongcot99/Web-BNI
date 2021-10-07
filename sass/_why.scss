@@ -19,7 +19,7 @@
     }
 
     &-title {
-        padding-top: 58px;
+        padding-top: 80px;
         text-align: center;
         font-size: $font-xlg;
         font-weight: 500;
@@ -29,21 +29,21 @@
 
         
         @include breakpoint-down(md) {
+            padding-top: 50px;
             font-size: $font-lg;
         }
     }
 
     &-list {
         position: relative;
-        bottom: -64px;
+        bottom: -40px;
 
         @include breakpoint-down(md) {
-            bottom: -40px;
+            bottom: -24px;
         }
     }
 
     &-item {
-        cursor: pointer;
         min-height: 477px;
         &:not(:last-child) {
             @include breakpoint-down(lg) {
@@ -51,6 +51,7 @@
             }
         }
          img {
+             cursor: pointer;
              width: 100%;
          }
     }
@@ -62,6 +63,7 @@
         box-shadow: 0px 0px 23px -2px #00000040;
 
         p {
+            cursor: pointer;
             font-family: Open Sans;
             width: 100%;
             min-height: 58px;
@@ -70,6 +72,10 @@
             line-height: 26px;
             text-align: center;
             color: #000000;
+
+            &:hover {
+                color: $redColor;
+            }
         }
 
         span {

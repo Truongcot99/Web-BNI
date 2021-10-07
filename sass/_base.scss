@@ -65,3 +65,15 @@ option {
 .show-overlay {
     height: 100vh;
 }
+
+.line {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    right: 0;
+    width: 0;
+    height: 1px;
+    background-color: #ccc;
+    transform-origin: left center;
+    transition: all 0.3s ease-in;
+}

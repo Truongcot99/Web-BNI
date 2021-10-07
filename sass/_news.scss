@@ -18,7 +18,6 @@
     }
 
     &-item {
-        cursor: pointer;
         margin-bottom: 44px;
         transition: all 0.15s linear;
 
@@ -27,6 +26,7 @@
         }
 
         .item-img {
+            cursor: pointer;
             width: 100%;
         }
 
@@ -38,6 +38,7 @@
             border-left: solid 1px #B6A9A9;
         
             p {
+                cursor: pointer;
                 text-align: left;
                 padding-top: 17px;
                 padding-bottom: 19px;
@@ -46,6 +47,10 @@
                 line-height: 22px;
                 font-weight: 600;
                 color: $redColor;
+
+                &:hover {
+                    color: #999;
+                }
 
                 @include breakpoint-down(md) {
                     font-size: 1.5rem;
@@ -74,10 +79,20 @@
                 padding-bottom: 8px;
 
                 a {
+                    position: relative;
                     font-family: Open sans;
                     font-size: 1.6rem;
                     line-height: 22px;
                     color: $redColor;
+
+                    &:hover {
+                        font-size: 1.7rem;
+                        color: #999;
+                    }
+
+                    &:hover .line{
+                        width: 100%;
+                    }
                 }
             }
         }

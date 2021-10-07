@@ -15,15 +15,11 @@
         position: absolute;
         z-index: -1;
         width: 100%;
-        height: 76%;
+        height: 80%;
         right: 0;
         bottom: 0;
         left: 0;
         object-fit: cover;
-
-        @include breakpoint-down(lg) {
-            height: 74%;
-        }
 
         @include breakpoint-down(md) {
             height: 77%;
@@ -35,15 +31,12 @@
         z-index: -1;
         width: 100%;
         content: "";
-        height: 76%;
+        height: 80%;
         right: 0;
         bottom: 0;
         left: 0;
         background-color:  #242323BF;
 
-        @include breakpoint-down(lg) {
-            height: 74%;
-        }
         @include breakpoint-down(md) {
             height: 77%;
         }
@@ -63,7 +56,7 @@
 
     &-title {
         margin-top: 27px;
-        margin-bottom: 44px;
+        margin-bottom: 60px;
         text-transform: uppercase;
         font-weight: 500;
         font-size: $font-xlg;
@@ -93,6 +86,10 @@
         cursor: pointer;
         outline: none;
 
+        &:hover {
+            background-color: $redColor;
+        }
+
         @include breakpoint-down(md) {
             width: 36px;
             height: 36px;
@@ -119,7 +116,11 @@
         height: 228px;
         margin: auto;
         transform-origin: center center;
-        transition: all 0.2s linear;
+        transition: all 0.2s ease-in;
+
+        @include breakpoint-down(md) {
+            height: 160px;
+        }
 
         // &::after {
         //     position: absolute;
@@ -139,7 +140,7 @@
         @include breakpoint-down(md) {
             position: relative;
             left: 50%;
-            top: 200px;
+            top: 150px;
             transform: translate(-50%,-50%);
         }
 
@@ -148,20 +149,20 @@
             width: 135px !important;
             height: 135px !important;
             border-radius: 50%;
-            transition: all 0.15s linear;
+            transition: all 0.2s ease-in;
         }
     }
 
     .shares-item {
             position: relative;
-            margin-top: -20px;
+            transition: all 0.2s ease-in;
 
             @include breakpoint-down(lg) {
-                margin-top: 8px;
+                margin-top: 50px;
             }
 
             @include breakpoint-down(md) {
-                margin-top: -80px;
+                margin-top: -30px;
             }
          p {
             font-family: Open sans;
@@ -227,6 +228,14 @@
 
                 @include breakpoint-down(lg) {
                     font-size: 1.8rem;
+                    left: -12px;
+                    top: -12px;
+                }
+
+                @include breakpoint-down(md) {
+                    font-size: 1.6rem;
+                    left: -16px;
+                    top: -8px;
                 }
             }
         }
@@ -238,7 +247,8 @@
             bottom: -147px;
             width: 100%;
             height: 205px;
-            @include breakpoint-down(md) {
+
+            @include breakpoint-down(lg) {
             height: 180px;
             bottom: -100px;
             }
@@ -311,26 +321,26 @@
         .slick-slide.slick-current.slick-active.slick-center {
             position: relative;
             z-index: 10;
+            margin-top: 12px;
         }
         
         .slick-slide.slick-current.slick-active.slick-center img {
-            transform: translate(-37px, -50px);
+            // transform: translate(-37px, -50px);
             transform: scale(1.67);
             margin-top: 0 !important;
 
             @include breakpoint-down(md) {
                 transform: scale(1);
-                transform: translate(0, -50px);
             }
         }
 
-        .slick-slide.slick-active {
-            transform: translateY(50px)
+        .slick-list {
+            min-height: 300px;
         }
 
         .slick-track {
             top: 34px;
-            height: 300px;
+            height: 228px;
             transition: all 0.2s ease-in-out;
         }
 }

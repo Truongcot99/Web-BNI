@@ -38,6 +38,10 @@
             line-height: 22px;
             color: #464444;
 
+            &:hover {
+                color: $redColor;
+            }
+
             @include breakpoint-down(md) {
                 font-size: $font-sm;
             }
