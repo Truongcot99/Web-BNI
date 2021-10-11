@@ -70,7 +70,7 @@ $(document).ready(function () {
         $('.item-list').toggleClass('show')
     })
 
-    $('.info-number').counterUp({
+    $('.info-number').countUp({
         delay: 10,
         time: 1200,
     })
