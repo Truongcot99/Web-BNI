@@ -3,14 +3,25 @@
     background-color: $redColor;
     // text-align: center;
 
+    .row {
+        margin: 0;
+    }
+
     &-wrapper {
         padding-top: 65px;
         padding-bottom: 65px;
 
-    }
+        @include breakpoint-down(lg) {
+            padding-top: 36px;
+        }
+    }   
 
     &-detail {
         margin-bottom: 48px;
+
+        @include breakpoint-down(lg) {
+            margin-bottom: 36px;
+        }
     }
 
     &-title{
@@ -77,7 +88,7 @@
             a i {
                 text-decoration: none;
                 color: $white;
-                font-size: 1.8rem;
+                font-size: 1.6rem;
                 line-height: 28px;
             }
         }
@@ -85,6 +96,10 @@
 
     &-policy {
         margin-bottom: 48px;
+
+        @include breakpoint-down(lg) {
+            margin-bottom: 36px;
+        }
 
         ul {
             list-style: none;
@@ -118,6 +133,11 @@
         list-style: none;
         transform: translateX(3%);
         margin-bottom: 48px;
+
+        @include breakpoint-down(lg) {
+            margin-bottom: 36px;
+        }
+        
         li {
             position: relative;
             padding-bottom: 8px;
@@ -149,31 +169,23 @@
 
     &-copy-right {
         position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         text-align: center;
-        width: 100%;
-        font-family: Open Sans;
-        padding-bottom: 8px;
-        font-size: 1.8rem;
-        line-height: 25px;
-        color: $white;
-    }
-    &::after {
-        position: absolute;
-        width: 100%;
-        height: 0.5px;
-        content: "";
-        bottom: -20px;
-        margin-bottom: 4%;
-        background-color: #B8A8A8;
 
-        @include breakpoint-down(lg) {
-            bottom: 12px;
+        p {
+            padding: 8px 0;
+            font-family: Open Sans;
+            font-size: 1.8rem;
+            line-height: 25px;
+            color: $white;
         }
-        @include breakpoint-down(md) {
-            bottom: 50px;
+        
+        &::before {
+            position: absolute;
+            width: 100%;
+            height: 0.5px;
+            content: "";
+            left: 0;
+            background-color: #B8A8A8;
         }
     }
 }

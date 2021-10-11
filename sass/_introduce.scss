@@ -1,0 +1,185 @@
+
+    .register-arena {
+        background-color: $redColor;
+        padding-top: 75px;
+        padding-bottom: 45px;
+        text-align: center;
+
+        @include breakpoint-down(md) {
+            padding-top: 60px;
+            padding-bottom: 30px;
+        }
+
+        @include breakpoint-down(sm) {
+            padding-top: 40px;
+            padding-bottom: 20px;
+        }
+    
+        &-title {
+            font-size: $font-xlg;
+            font-weight: 500;
+            color: $white;
+            line-height: 43px;
+            text-transform: uppercase;
+
+            @include breakpoint-down(lg) {
+                font-size: 3.2rem;
+            }
+
+            @include breakpoint-down(md) {
+                font: 2.4rem;
+                margin-bottom: 16px;
+            }
+        }
+    }
+
+    .leaders {
+    
+        &-title {
+            position: relative;
+            padding-top: 75px;
+            padding-bottom: 40px;
+            background-color: $redColor;
+            
+            @include breakpoint-down(lg) {
+                padding-top: 60px;
+                padding-bottom: 30px;
+            }
+
+            @include breakpoint-down(md) {
+                padding-top: 36px;
+                padding-bottom: 20px;
+                border-top: 0.5px solid $white;
+            }
+
+            &::before {
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0px;
+                left: -1900px;
+                height: 100%;
+                width: 1900px;
+                background-color: #CF2030;
+            }
+
+            h2 {
+                position: relative;
+                z-index: 20;
+                font-size: 2.8rem;
+                color: $white;
+                text-transform: uppercase;
+                line-height: 36px;
+
+                @include breakpoint-down(lg) {
+                    font-size: 2.4rem;
+                }
+
+                b {
+                    font-size: 2.8rem;
+                    color: $white;
+                    text-transform: uppercase;
+                    line-height: 36px;
+
+                    @include breakpoint-down(lg) {
+                        font-size: 2.4rem;
+                    }
+                }
+            }
+
+            &::after {
+                content: "";
+                display: block;
+                height: 100%;
+                width: 130px;
+                background-color: #CF2030;
+                position: absolute;
+                top: 0px;
+                right: -63px;
+                transform: skew(-30deg, 0deg);
+                z-index: 1;
+
+                @include breakpoint-down(md) {
+                    display: none;
+                }
+            }
+        }
+
+        &-description {
+            padding-top: 75px;
+            padding-bottom: 40px;
+            margin: auto;
+
+            @include breakpoint-down(lg) {
+                padding-top: 60px;
+                padding-bottom: 30px;
+            }
+
+            @include breakpoint-down(md) {
+                padding-top: 36px;
+                padding-bottom: 20px;
+            }
+
+            p {
+                font-family: Open sans;
+                margin-left: 120px;
+                font-size: 1.8rem;
+                color: $blackColor;
+                line-height: 22px;
+
+                @include breakpoint-down(lg) {
+                    font-size: 1.6rem;
+                }
+
+                @include breakpoint-down(md) {
+                    margin-left: 0;
+                }
+
+            }
+        }
+
+        &-list {
+            padding-bottom: 48px;
+            background-color: #f7f7f7;
+
+            @include breakpoint-down(lg) {
+                padding-bottom: 24px;
+            }
+
+            &-item {
+                margin-bottom: 32px;
+
+                .item-img {
+                    width: 100%;
+                    img {
+                        width: 100%;
+                        height: auto;
+                        object-fit: cover;
+                    }
+                }
+
+                .item-content {
+                    text-align: center;
+
+                    .leader-position {
+                        font-size: 1.6rem;
+                        color: $blackColor;
+                        line-height: 22px;
+                        font-weight: 700;
+                        font-family: Open sans;
+                        margin-top: 8px;
+                    }
+
+                    .leader-name {
+                        font-size: 1.8rem;
+                        color: $redColor;
+                        font-weight: 700;
+                        line-height: 22px;
+                        font-family: Open sans;
+                        margin-top: 4px;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+    }

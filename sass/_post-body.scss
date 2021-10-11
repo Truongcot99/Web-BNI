@@ -1,0 +1,208 @@
+.post-wrapper {
+    padding-top: 75px;
+    padding-bottom: 45px;
+
+    .post-content {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        overflow: hidden;
+    }
+}
+
+.post-heading {
+    font-size: 2.8rem;
+    margin-bottom: 8px;
+    color: $redColor;
+    text-transform: uppercase;
+    line-height: 36px;
+    font-weight: 500;
+
+    @include breakpoint-down(md) {
+        font-size: 2.4rem;
+        line-height: 24px;
+    }
+}
+
+.post-meta {
+    font-family: Open sans;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include breakpoint-down(md) {
+        display: block;
+    }
+
+    span {
+        font-size: 1.6rem;
+        @include breakpoint-down(md) {
+            font-size: 1.4rem;
+        }
+        i {
+            margin-right: 8px;
+            font-size: 1.6rem;
+
+            @include breakpoint-down(md) {
+                font-size: 1.4rem;
+            }
+        }
+    }
+
+    .share-social {
+        list-style: none;
+        display: flex;
+
+        li {
+            margin-left: 8px;
+
+            
+            button {
+                border: none;
+                color: $white;
+                padding: 4px 8px;
+                line-height: 18px;
+
+                &:hover {
+                    opacity: 0.8;
+                }
+                i {
+                    font-size: 1.4rem;
+                    padding-right: 8px;
+
+                    @include breakpoint-down(md) {
+                        padding-right: 0;
+                        transform: translateY(4px);
+                    }
+                }
+
+                span {
+                    font-size: 1.4rem;
+                }
+            }
+
+            .btn-facebook {
+                background-color: #4267b2;
+            }
+
+            .btn-twitter {
+                background: #1b95e0;
+            }
+
+            .btn-instagram {
+                background-color: #b02f95;
+            }
+
+            .btn-linkedin {
+                background-color: #0e76a8;
+            }
+        }
+    }
+}
+.post-sabo {
+    margin-top: 24px;
+    font-family: Open sans;
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: $blackColor;
+
+    @include breakpoint-down(md) {
+        font-size: 1.6rem;
+    }
+}
+
+.post-detail {
+    font-family: Open sans;
+    color: $blackColor;
+
+    h2 {
+        margin-top: 20px;
+        margin-bottom: 8px;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+        color: $redColor;
+        line-height: 24px;
+
+        @include breakpoint-down(md) {
+            font-size: 1.8rem;
+        }
+    }
+
+    p {
+        margin-bottom: 16px;
+        text-align: justify;
+        font-size: 1.6rem;
+        line-height: 24px;
+
+        @include breakpoint-down(md) {
+            font-size: 1.5rem;
+        }
+
+        img {
+            text-align: center;
+            max-width: 100%;
+            height: auto;
+        }
+        .img-description {
+            text-align: center;
+            font-size: 1.4rem;
+            font-style: italic;
+        }
+    }
+}
+
+.post-sidebar {
+    transform: translateY(-6rem);
+    font-family: Open sans;
+
+    @include breakpoint-down(lg) {
+        transform:  translateY(0);
+    }
+
+    .post-recent,
+    .post-top-view {
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+        border-radius: 12px;
+        overflow: hidden;
+        margin-bottom: 36px;
+    }
+
+    .post-recent-name,
+    .post-top-view-name {
+        font-size: 2rem;
+        color: $white;
+        text-transform: uppercase;
+        text-align: center;
+        padding: 12px 0;
+        font-weight: 600;
+        background-color: #999;
+    }
+
+    .post-recent-item,
+    .post-top-view-item {
+        margin-top: 16px;
+        margin-bottom: 16px;
+        a {
+            color: $blackColor;
+            font-size: 1.4rem;
+            font-weight: 500;
+            img {
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+                margin-left: 16px;
+            }
+        }
+        .item-name {
+            margin-left: 8px;
+            display: -webkit-box;
+            -webkit-line-clamp: 3;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+            &:hover {
+                color: $redColor;
+            }
+        }
+    }
+}

@@ -45,7 +45,7 @@
     &-list {
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         overflow: hidden;
         transition: all 0.3s linear;
@@ -60,6 +60,10 @@
             padding: 8px 0;
             cursor: pointer;
 
+            &:first-child {
+                margin-right: -10px;
+            }
+            
             .icon-down {
                 position: relative;
                 font-size: $font-md;
@@ -71,7 +75,7 @@
                 }
             }
             &:hover .menu-children{
-                display: block;
+                transform: scaleY(1);
             }
 
             &:hover .menu--link{
@@ -128,12 +132,14 @@
     position: absolute;
     background-color: #999999;
     min-width: 180px;
+    overflow: hidden;
     transform-origin: top;
-    display: none;
+    transform: scaleY(0);
+    transition: all 0.2s linear;
 
     @include breakpoint-down(lg) {
         position: relative;
-        // display: block;
+        transform: scaleY(1);
     }
 
     ul {

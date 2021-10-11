@@ -5,7 +5,6 @@
 } 
   
 body {  
-    flex: 1;
     margin: 0; 
     padding: 0;
     font-size: 62.5%;
@@ -13,7 +12,7 @@ body {
     font-weight: 400;
     font-family: 'Lato', sans-serif;
     box-sizing: border-box;
-    overflow-x: hidden;
+    overflow-x: hidden !important;
     
     &.noscroll {
         overflow: hidden;
@@ -77,3 +76,4 @@ option {
     transform-origin: left center;
     transition: all 0.3s ease-in;
 }
+

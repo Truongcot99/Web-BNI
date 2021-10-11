@@ -1,0 +1,11 @@
+.box-post-relation {
+    
+    &-title {
+        padding: 12px 0 12px 16px;
+        margin-bottom: 24px;
+        font-size: 2rem;
+        background-color: #999;
+        color: $white;
+        text-transform: uppercase;
+    }
+}

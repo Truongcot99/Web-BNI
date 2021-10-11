@@ -1,0 +1,98 @@
+.prize {
+    margin-top: 75px;
+    margin-bottom: 45px;
+
+    &-title {
+        margin-bottom: 30px;
+        
+        h2 {
+            text-transform: uppercase;
+            text-align: center;
+            font-size: $font-xlg;
+            line-height: 43px;
+            font-weight: 700;
+            color: $redColor;
+
+            @include breakpoint-down(lg) {
+                line-height: 32px;
+                font-size: 3.2rem;
+            }
+
+            @include breakpoint-down(md) {
+                font-size: 2.4rem;
+            }
+
+            b {
+                text-align: center;
+                font-size: $font-xlg;
+                line-height: 43px;
+                font-weight: 400;
+                color: $redColor;
+
+                @include breakpoint-down(lg) {
+                    line-height: 32px;
+                    font-size: 3.2rem;
+                }
+
+                @include breakpoint-down(md) {
+                    font-size: 2.4rem;
+                }
+            }   
+        }
+    }
+
+    &-post {
+        padding-bottom: 45px;
+    }
+
+    &-img {
+        cursor: pointer;
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    &-content {
+        position: absolute;
+        text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+
+        @include breakpoint-down(md) {
+            position: relative;
+        }
+        h3 {
+            cursor: pointer;
+            margin-bottom: 30px;
+            font-size: 1.8rem;
+            line-height: 22px;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: $redColor;
+
+            @include breakpoint-down(lg) {
+                margin-bottom: 16px;
+                font-size: 1.6rem;
+            }
+
+            @include breakpoint-down(md) {
+                margin-top: 8px;
+            }
+
+            &:hover {
+                color: $darkColor;
+            }
+        }
+
+        p {
+            font-family: Open sans;
+            font-size: 1.6rem;
+            line-height: 22px;
+
+            @include breakpoint-down(lg) {
+                font-size: 1.5rem;
+            }
+        }
+    }
+}

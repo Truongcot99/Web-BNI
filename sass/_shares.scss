@@ -297,24 +297,7 @@
                     }
                 }
 
-                .form-select {
-                    padding-left: 12px;
-                    width: 300px;
-                    height: 52px;
-                    font-family: Open Sans;
-                    font-size: 2rem;
-                    line-height: 25px;
-                    color: #494646;
-                    background-color: $white;
-                    border-radius: 28px;
-                    border: none;
-                    margin:  auto;
-                    cursor: pointer;
-
-                    @include breakpoint-down(md) {
-                        width: 200px;
-                    }
-                }
+                
             }
         }
         // Css slick
@@ -343,4 +326,22 @@
             height: 228px;
             transition: all 0.2s ease-in-out;
         }
+}
+.form-select {
+    padding-left: 12px;
+    width: 300px;
+    height: 52px;
+    font-family: Open Sans;
+    font-size: 2rem;
+    line-height: 25px;
+    color: #494646;
+    background-color: $white;
+    border-radius: 28px;
+    border: none;
+    margin:  auto;
+    cursor: pointer;
+
+    @include breakpoint-down(md) {
+        width: 200px;
+    }
 }

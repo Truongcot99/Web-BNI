@@ -20,7 +20,7 @@
     }
 
     &-item {
-        margin-bottom: 8px;
+        margin-bottom: 20px;
         span {
             margin-top: 20px;
             font-family: Open Sans;
@@ -36,7 +36,7 @@
     }
 
     &-icon {
-        margin-bottom: 20px;
+        margin-bottom: 12px;
     }
 
     &-box {
@@ -55,6 +55,8 @@
         @include breakpoint-down(lg) {
             margin-top: 50px;
             margin-bottom: 32px;
+            padding-left: 0px;
+
         }
 
         p {
@@ -90,10 +92,10 @@
     }
 
     &-img {
-        width: 100%;
         
         img {
             width: 100%;
+            object-fit: cover;
         }
     }
 }

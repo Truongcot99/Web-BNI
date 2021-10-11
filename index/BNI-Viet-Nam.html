@@ -5,25 +5,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNI Việt Nam</title>
 
     <!-- Link fontawesome -->
-    <link rel="stylesheet" href="./font/fontawesome-free-5.15.4-web/css/all.min.css">
+    <link rel="stylesheet" href="../font/fontawesome-free-5.15.4-web/css/all.min.css">
 
-    <!-- Link bootstrap -->
+    <!-- Link bootrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Link font Family -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;1,300;1,400&display=swap"
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
 
     <!-- Link library slick -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
 
-    <link rel="stylesheet" href="./Libs/Aos/aos.css">
-    <link rel="stylesheet" href="./sass/main.css">
-
-    <title>Chào mừng đến với BNI Việt Nam</title>
+    <link rel="stylesheet" href="../sass/main.css">
 </head>
 
 <body>
@@ -32,8 +31,8 @@
         <div class="container header-wrapper">
 
             <div class="header__logo">
-                <a href="./index.html">
-                    <img src="./image/logo-BNI.png" alt="Logo BNI">
+                <a href="../index.html">
+                    <img src="../image/logo-BNI.png" alt="Logo BNI">
                 </a>
             </div>
 
@@ -67,7 +66,7 @@
 
             <ul class="nav-list">
                 <li class="nav-item">
-                    <a href="./index.html" class="menu--link active">
+                    <a href="../index.html" class="menu--link">
                         <i class="fas fa-home icon-home"></i>
                     </a>
                 </li>
@@ -75,7 +74,7 @@
                     <a href="#" class="menu--link">Bni global</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./index/BNI-Viet-Nam.html" class="menu--link">Bni Việt Nam</a>
+                    <a href="#" class="menu--link">Bni Việt Nam</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="menu--link">Bni Vùng</a>
@@ -87,7 +86,7 @@
                     <a href="#" class="menu--link">trách nhiệm xã hội</a>
                 </li>
                 <li class="nav-item">
-                    <a href="./index/news.html" class="menu--link">
+                    <a href="./news.html" class="menu--link">
                         tin tức
                     </a>
                     <i class="fas fa-sort-down icon-down"></i>
@@ -107,7 +106,7 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="menu--link">
+                    <a href="./Ho-tro.html" class="menu--link">
                         Hỗ trợ
                     </a>
                     <i class="fas fa-sort-down icon-down"></i>
@@ -123,22 +122,29 @@
                     </div>
                 </li>
                 <li class="nav-item">
-                    <a href="./index/Lien-he.html" class="menu--link">Liên hệ</a>
+                    <a href="./Lien-he.html" class="menu--link">Liên hệ</a>
                 </li>
             </ul>
         </div>
     </nav>
 
-    <!-- Slider -->
-    <div class="slider">
-        <div class="slider-item">
-            <img src="./image/img_background_slider.png" alt="" class="slider-img">
-        </div>
+    <!-- Box Header -->
+    <div class="box-header">
+        <div class="container">
+            <h1>BNI Việt Nam</h1>
+            <ul class="box-path">
+                <li class="path-item">
+                    <a href="../index.html">
+                        <i class="fas fa-home"></i>
+                    </a>
+                    <a href="../index.html">Trang chủ</a>
+                </li>
 
-        <div class="slider-item">
-            <img src="./image/img_background_slider.png" alt="" class="slider-img">
+                <li class="path-item">
+                    <span>BNI Việt Nam</span>
+                </li>
+            </ul>
         </div>
-
     </div>
 
     <!-- Info -->
@@ -148,7 +154,7 @@
 
             <div class="row info-content">
                 <div class="col-lg-6 col-md-6">
-                    <img src="./image/img_welcome.png" alt="" class="info-img">
+                    <img src="../image/img_welcome.png" alt="" class="info-img">
                 </div>
                 <div class="col-lg-6 col-md-6 info-welcome">
                     <p>
@@ -212,8 +218,7 @@
     <!-- Core value -->
     <div class="value">
         <div class="container">
-            <h2 class="value-title">7 Giá trị cốt
-                lõi</h2>
+            <h2 class="value-title">7 Giá trị cốt lõi</h2>
 
             <div class="row">
                 <div class="col value-item">
@@ -411,162 +416,23 @@
                     </span>
                 </div>
                 <div class="col-lg-6 value-img">
-                    <img src="./image/core-values-img.jpg" alt="">
+                    <img src="../image/core-values-img.jpg" alt="">
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- why -->
-    <div class="why">
-        <img src="./image/background-home-why.jpg" alt="" class="why-background">
+    <!-- Introduce Leaders -->
+    <!-- From register -->
+    <div class="register-arena">
         <div class="container">
-            <div class="why-title">Tại sao nên gia nhập BNI</div>
-            <div class="row g-lg-5 why-list">
-                <div class="col-lg-4 why-item">
-                    <img src="./image/home-why-img-1.jpg" alt="">
-                    <div class="why-content">
-                        <p>Nâng cao kiến thức và kỹ năng</p>
-                        <span>
-                            Tham gia các chương trình đào tạo kiến thức và kỹ năng phát triển kinh doanh chuyên nghiệp
-                            theo chuẩn quốc tế thông qua việc tiếp cận với tài nguyên độc quyền từ hệ thống BNI Global.
-                        </span>
-                    </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 register-arena-title">
+                    Đăng ký tham gia
                 </div>
+                <div class="col-lg-4 d-lg-block d-md-none"></div>
 
-                <div class="col-lg-4 why-item">
-                    <img src="./image/home-why-img-2.jpg" alt="">
-                    <div class="why-content">
-                        <p>Gia tăng triển vọng và hiệu quả kinh doanh</p>
-                        <span>
-                            Gia tăng hiệu quả hoạt động kinh doanh của doanh nghiệp thông qua việc cho đi và nhận về các
-                            cơ hội kinh doanh hấp dẫn, cả về “chất” và “lượng”.
-                        </span>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 why-item">
-                    <img src="./image/home-why-img-3.jpg" alt="">
-                    <div class="why-content">
-                        <p>
-                            Tiếp cận mạng lưới kinh doanh rộng khắp trên toàn cầu
-                        </p>
-                        <span>
-                            Gia từ 48 đến 50 cuộc họp định kỳ tại Chapter mỗi
-                            năm để có cơ hội tiếp cận với hàng trăm ngàn doanh nhân và doanh nghiệp. Qua đó, gia tăng cơ
-                            hội tiếp xúc với nhiều chuyên gia kinh doanh đa lĩnh vực và gặt hái những cơ hội kinh doanh
-                            tốt nhất cho doanh nghiệp.
-                        </span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Share -->
-    <div class="shares">
-        <img src="./image/background-quotes.jpg" alt="" class="shares-background">
-
-        <div class="container shares-wrapper">
-            <div class="shares-title">NOTABLE NETWORKER</div>
-            <!-- <button class="shares-icon-prev">
-                <i class="fas fa-arrow-left"></i>
-            </button> -->
-            <div class="shares-box">
-                <div class="shares-img">
-                    <img src="./image/member-1.jpg" alt="">
-                    <img src="./image/member-2.jpg" alt="">
-                    <img src="./image/member-3.jpg" alt="">
-                    <img src="./image/member-3.jpg" alt="">
-                </div>
-
-                <div class="shares-content">
-
-                    <div class="shares-item">
-                        <div class="item-name">Nguyễn Anh Tuấn</div>
-                        <p>Giám đốc công ty cổ phần TTH</p>
-                        <span>
-                            Chủ tịch BNI Exellence (Thuộc vùng Hà Nội 2) nhiệm kỳ 11
-                        </span>
-                        <div class="item-description">
-                            <i class="fas fa-quote-left icon-quotes"></i>
-                            Đây là tổ chức kết nối kinh doanh vững bền nhất & thành công nhất trên thế giới, tổ chức này
-                            có
-                            nhiều
-                            công cụ hữu ích giúp cho những CEO muốn phát triển bản thân và nâng cao giá trị cạnh tranh
-                            cho
-                            Doanh
-                            nghiệp của họ. I love BNI.
-                        </div>
-                    </div>
-
-                    <div class="shares-item">
-                        <div class="item-name">Nguyễn Ngọc Hà</div>
-                        <p>Giám đốc công ty cổ phần BDE</p>
-                        <span>
-                            Chủ tịch BNI Exellence (Thuộc vùng Hà Nội 2) nhiệm kỳ 12
-                        </span>
-                        <div class="item-description">
-                            <i class="fas fa-quote-left icon-quotes"></i>
-                            Đây là tổ chức kết nối kinh doanh vững bền nhất & thành công nhất trên thế giới, tổ chức này
-                            có
-                            nhiều
-                            công cụ hữu ích giúp cho những CEO muốn phát triển bản thân và nâng cao giá trị cạnh tranh
-                            cho
-                            Doanh
-                            nghiệp của họ. I love BNI.
-                        </div>
-                    </div>
-
-                    <div class="shares-item">
-                        <div class="item-name">Phan Trọng Dũng</div>
-                        <p>Giám đốc công ty cổ phần ADF</p>
-                        <span>
-                            Chủ tịch BNI Exellence (Thuộc vùng Hà Nội 2) nhiệm kỳ 13
-                        </span>
-                        <div class="item-description">
-                            <i class="fas fa-quote-left icon-quotes"></i>
-                            Đây là tổ chức kết nối kinh doanh vững bền nhất & thành công nhất trên thế giới, tổ chức này
-                            có
-                            nhiều
-                            công cụ hữu ích giúp cho những CEO muốn phát triển bản thân và nâng cao giá trị cạnh tranh
-                            cho
-                            Doanh
-                            nghiệp của họ. I love BNI.
-                        </div>
-                    </div>
-
-                    <div class="shares-item">
-                        <div class="item-name">Phan Ngọc Dũng</div>
-                        <p>Giám đốc công ty cổ phần CCE</p>
-                        <span>
-                            Chủ tịch BNI Exellence (Thuộc vùng Hà Nội 2) nhiệm kỳ 14
-                        </span>
-                        <div class="item-description">
-                            <i class="fas fa-quote-left icon-quotes"></i>
-                            Đây là tổ chức kết nối kinh doanh vững bền nhất & thành công nhất trên thế giới, tổ chức này
-                            có
-                            nhiều
-                            công cụ hữu ích giúp cho những CEO muốn phát triển bản thân và nâng cao giá trị cạnh tranh
-                            cho
-                            Doanh
-                            nghiệp của họ. I love BNI.
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <button class="shares-icon-next">
-                <i class="fas fa-arrow-right"></i>
-            </button> -->
-            <!-- <div class="shares-form">
-                
-
-            </div> -->
-
-            <div class="background-form">
-                <img src="./image/home-contact-background.jpg" alt="">
-                <div class="form-register-arena">
-                    <p>Đăng ký tham gia</p>
+                <div class="col-lg-4 col-md-6 register-arena-form">
                     <select class="form-select">
                         <option value="">Chọn khu vực</option>
                         <optgroup label="BNI Millionaire Business Network (BNI MBN)">
@@ -628,128 +494,129 @@
                     </select>
                 </div>
             </div>
-
         </div>
     </div>
 
-    <!-- Story -->
-    <div class="story">
+    <!-- Leaders -->
+    <div class="leaders">
         <div class="container">
-            <div class="story-title">
-                Câu chuyện thành công của các thành viên
+            <div class="row">
+                <div class="col-lg-4 col-md-4 leaders-title">
+                    <h2>Ban lãnh đạo <b>BNI VIệt Nam</b></h2>
+                </div>
+
+                <div class="col-lg-8 col-md-8 leaders-description">
+                    <p>Đội ngũ lãnh đạo của chúng tôi sống theo triết lý Givers Gain® và đam mê tạo ra một nền văn
+                        hóa
+                        nổi bật nhằm thúc đẩy sự hợp tác và gắn kết.</p>
+                </div>
             </div>
+        </div>
 
-            <div class="row g-lg-5 story-list">
-                <div class="col-lg-4 story-item">
-                    <img src="./image/story-img-1.jpg" alt="">
-                    <p>Câu chuyện BNI: Mình sống trên cuộc đời này để làm gì?</p>
-                </div>
-
-                <div class="col-lg-4 story-item">
-                    <img src="./image/story-img-2.jpg" alt="">
-                    <p>Câu chuyện BNI: Thành công không chỉ CHO ĐI mà còn phải CHO ĐI NHIỀU HƠN nữa</p>
-                </div>
-
-                <div class="col-lg-4 story-item">
-                    <img src="./image/story-img-3.jpg" alt="">
-                    <p>Câu chuyện BNI: Thành công nhờ mối quan hệ và kiến thức</p>
+        <div class="leaders-list">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-12 leaders-list-item">
+                        <div class="item-img">
+                            <img src="https://bni.vn/wp-content/uploads/2019/11/Ho-Quang-Minh_1.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="leader-position">Chủ tịch BNI Việt Nam</div>
+                            <div class="leader-name">Hồ quang Minh</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 leaders-list-item">
+                        <div class="item-img">
+                            <img src="https://bni.vn/wp-content/uploads/2019/11/Nguyen-Kien-Tri.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="leader-position">Phó Chủ tịch BNI Việt Nam</div>
+                            <div class="leader-name">Nguyễn Quang Trì</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 leaders-list-item">
+                        <div class="item-img">
+                            <img src="https://bni.vn/wp-content/uploads/2020/01/Raymond-600x600.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="leader-position">Giám đốc điều hành</div>
+                            <div class="leader-name">Lê Trường Sơn</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 leaders-list-item">
+                        <div class="item-img">
+                            <img src="https://bni.vn/wp-content/uploads/2019/10/Dao-Lan-Phuong.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="leader-position">Giám đốc đào tạo</div>
+                            <div class="leader-name">Đào Lan Phương</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 leaders-list-item">
+                        <div class="item-img">
+                            <img src="https://bni.vn/wp-content/uploads/2020/01/Lisa-615x615.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="leader-position">Giám đốc hình ảnh</div>
+                            <div class="leader-name">Lê THị Lương Uyên</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 leaders-list-item">
+                        <div class="item-img">
+                            <img src="https://bni.vn/wp-content/uploads/2020/11/Bui-Nguyet-Anh-822x822.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="leader-position">Giám đốc BNI Hà Nội 1</div>
+                            <div class="leader-name">Bùi Nguyệt Anh</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 leaders-list-item">
+                        <div class="item-img">
+                            <img src="https://bni.vn/wp-content/uploads/2020/01/Henry-685x685.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="leader-position">Giám đốc vùng BNI HQH</div>
+                            <div class="leader-name">Hà Ngọc Hưng</div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-12 leaders-list-item">
+                        <div class="item-img">
+                            <img src="https://bni.vn/wp-content/uploads/2020/01/Long-730x730.jpg" alt="">
+                        </div>
+                        <div class="item-content">
+                            <div class="leader-position">Giám đốc vùng BNI Hà Nội 6</div>
+                            <div class="leader-name">Phạm Thành Long</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- End Introduce Leaders -->
 
-    <!-- News -->
-    <div class="news">
+    <!-- Prize -->
+    <div class="prize">
         <div class="container">
-            <div class="news-title">Tin TỨc và chia sẻ</div>
-            <div class="row g-lg-5">
-                <!-- item 1 -->
-                <div class="col-lg-4 col-md-6 news-item">
-                    <img src="./image/news-img-1.jpg" alt="" class="item-img">
-                    <div class="item-content">
-                        <p>MEGA STARS: NỖ LỰC TỪNG NGÀY TRÊN CON ĐƯỜNG TÌM LẠI SỰ “VĨ ĐẠI”</p>
-                        <span>Trong buổi lễ kỷ niệm sinh nhật lần thứ 7, khát khao tìm lại chính mình, đạt được sự
-                            phát triển... </span>
-                        <div class="item-content--link">
-                            <a href="#">Xem thêm >>
-                                <span class="line"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
+            <div class="prize-title">
+                <h2>
+                    <b>Giải thưởng BNI và vinh danh</b>
+                    BNI Việt Nam
+                </h2>
+            </div>
 
-                <!-- item 2 -->
-                <div class="col-lg-4 col-md-6 news-item">
-                    <img src="./image/news-img-2.jpg" alt="" class="item-img">
-                    <div class="item-content">
-                        <p>MEGA STARS: NỖ LỰC TỪNG NGÀY TRÊN CON ĐƯỜNG TÌM LẠI SỰ “VĨ ĐẠI”</p>
-                        <span>Trong buổi lễ kỷ niệm sinh nhật lần thứ 7, khát khao tìm lại chính mình, đạt được sự
-                            phát triển... </span>
-                        <div class="item-content--link">
-                            <a href="#">Xem thêm >>
-                                <span class="line"></span>
-                            </a>
-                        </div>
-                    </div>
+            <div class="row prize-post">
+                <div class="col-lg-6 col-md-6 prize-img">
+                    <img src="https://bni.vn/wp-content/uploads/2019/10/p2.jpg" alt="">
                 </div>
-
-                <!-- item 3 -->
-                <div class="col-lg-4 col-md-6 news-item">
-                    <img src="./image/news-img-3.jpg" alt="" class="item-img">
-                    <div class="item-content">
-                        <p>MEGA STARS: NỖ LỰC TỪNG NGÀY TRÊN CON ĐƯỜNG TÌM LẠI SỰ “VĨ ĐẠI”</p>
-                        <span>Trong buổi lễ kỷ niệm sinh nhật lần thứ 7, khát khao tìm lại chính mình, đạt được sự
-                            phát triển... </span>
-                        <div class="item-content--link">
-                            <a href="#">Xem thêm >>
-                                <span class="line"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- item 4 -->
-                <div class="col-lg-4 col-md-6 news-item">
-                    <img src="./image/news-img-4.jpg" alt="" class="item-img">
-                    <div class="item-content">
-                        <p>MEGA STARS: NỖ LỰC TỪNG NGÀY TRÊN CON ĐƯỜNG TÌM LẠI SỰ “VĨ ĐẠI”</p>
-                        <span>Trong buổi lễ kỷ niệm sinh nhật lần thứ 7, khát khao tìm lại chính mình, đạt được sự
-                            phát triển... </span>
-                        <div class="item-content--link">
-                            <a href="#">Xem thêm >>
-                                <span class="line"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- item 5 -->
-                <div class="col-lg-4 col-md-6 news-item">
-                    <img src="./image/news-img-5.jpg" alt="" class="item-img">
-                    <div class="item-content">
-                        <p>MEGA STARS: NỖ LỰC TỪNG NGÀY TRÊN CON ĐƯỜNG TÌM LẠI SỰ “VĨ ĐẠI”</p>
-                        <span>Trong buổi lễ kỷ niệm sinh nhật lần thứ 7, khát khao tìm lại chính mình, đạt được sự
-                            phát triển... </span>
-                        <div class="item-content--link">
-                            <a href="#">Xem thêm >>
-                                <span class="line"></span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- item 6 -->
-                <div class="col-lg-4 col-md-6 news-item">
-                    <img src="./image/news-img-6.jpg" alt="" class="item-img">
-                    <div class="item-content">
-                        <p>MEGA STARS: NỖ LỰC TỪNG NGÀY TRÊN CON ĐƯỜNG TÌM LẠI SỰ “VĨ ĐẠI”</p>
-                        <span>Trong buổi lễ kỷ niệm sinh nhật lần thứ 7, khát khao tìm lại chính mình, đạt được sự
-                            phát triển... </span>
-                        <div class="item-content--link">
-                            <a href="#">Xem thêm >>
-                                <span class="line"></span>
-                            </a>
-                        </div>
+                <div class="col-lg-6 col-md-6 position-relative">
+                    <div class="prize-content">
+                        <h3>ĐẰNG SAU NHỮNG GIÁ TRỊ RẤT LỚN MÀ BNI MANG LẠI CHO CÁC DOANH NGHIỆP VIỆT NAM</h3>
+                        <p>
+                            BNI có phải là tổ chức kinh doanh đa cấp? Đây là một câu hỏi mà rất nhiều người quan tâm,
+                            một số
+                            còn cho rằng BNI là tổ chức kinh doanh đa cấp. Nếu chính bạn cũng chỉ mới nghe mà chưa từng
+                            nghiêm túc tìm hiểu về BNI, thì hãy đọc bài viết này.
+                        </p>
                     </div>
 
                 </div>
@@ -839,17 +706,15 @@
         </div>
     </footer>
 
-    <div class="overlay"></div>
+    <script src="../Libs/jquery/jquery.js"></script>
+    <script src="../js/main.js"></script>
 
-    <script src="./Libs/jquery/jquery.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./Libs/Aos/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.js"
+        integrity="sha512-WNZwVebQjhSxEzwbettGuQgWxbpYdoLf7mH+25A7sfQbbxKeS5SQ9QBf97zOY4nOlwtksgDA/czSTmfj4DUEiQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+        </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    <script>
-        AOS.init();
-    </script>
 </body>
 
 </html>

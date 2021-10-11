@@ -1,14 +1,18 @@
 .box-header {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 48px;
+    padding-bottom: 32px;
     background-color: $redColor;
     h1 {
         position: relative;
-        font-size: $font-xlg;
+        font-size: 32px;
         font-weight: 700;
         line-height: 43px;
         color: $white;
         text-transform: uppercase;
+
+        @include breakpoint-down(lg) {
+            font-size: 2.4rem;
+        }
 
         &::after {
             content: "";
@@ -27,36 +31,63 @@
         align-items: center;
         position: relative;
         margin-top: 20px;
+        flex-wrap: wrap;
 
         .path-item { 
             margin-left: 12px;
             font-family: Open sans;
+            text-transform: capitalize;
+            display: inline-flex;
+            align-items: center;
+
+            &:last-child {
+                display: -webkit-box;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 1;
+                overflow: hidden;
+                color: #999;
+                margin-top: 8px;
+            }
             i {
                 font-size: 2.2rem;
                 color: $white;
                 line-height: 36px;
                 margin-right: 4px;
+
+                @include breakpoint-down(lg) {
+                    font-size: 2rem;
+                }
             }
             a {
+                display: inline-block;
                 font-size: 2.2rem;
                 line-height: 36px;
                 color: $white;
+
+                @include breakpoint-down(lg) {
+                    font-size: 2rem;
+                }
             }
 
             span {
-                font-size: 2rem;
-                line-height: 36px;
-                color: #b5b2b2;
-                margin-left: 18px;
+                font-size: 1.8rem;
+                // color: #fff;
+
+                @include breakpoint-down(lg) {
+                    font-size: 1.6rem;
+                }
+
+                @include breakpoint-down(md) {
+                    font-size: 1.4rem;
+                }
             }
+
 
             &:not(:first-child)::before {
                 content: "/";
-                position: absolute;
                 font-size: 2rem;
-                line-height: 36px;
                 color: $white;
-                margin-right: 8px;
+                padding-right: 4px;
             }
         }
     }
