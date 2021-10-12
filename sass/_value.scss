@@ -52,6 +52,11 @@
         margin-top: 85px;
         padding-left: 53px;
 
+        @include breakpoint-down(xl) {
+            margin-top: 50px;
+            padding-left: 20px;
+        }
+
         @include breakpoint-down(lg) {
             margin-top: 50px;
             margin-bottom: 32px;

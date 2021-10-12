@@ -23,7 +23,6 @@ $(document).ready(function () {
                 settings: {
                     infinite: false,
                 }
-
             }
         ]
     });
@@ -70,10 +69,7 @@ $(document).ready(function () {
         $('.item-list').toggleClass('show')
     })
 
-    $('.info-number').countUp({
-        delay: 10,
-        time: 1200,
-    })
+
 });
 
 
